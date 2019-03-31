@@ -1,0 +1,36 @@
+.home-main {
+  height: 100%;
+  background: #303131;
+  font: 16px/1.6 Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  // background-image: url("./bg01.jpg");
+}
+.site-sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 2;
+  width: 25%;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(145, 13, 13, 0.8);
+}
+.site-main {
+  // margin-left: 25%;
+  height: 100%;
+  background-color: #fff;
+  // @media (min-width: 1280px) {
+  //   margin-left: 480px;
+  // }
+  // @media (max-width: 1100px) {
+  //   margin-left: 320px;
+  // }
+  // @media (max-width: 960px) {
+  //   transform: "translate3d(0, 0, 0)" !important;
+  //   animation: "300ms ease-out";
+  // }
+}

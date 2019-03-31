@@ -1,0 +1,163 @@
+:host {
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 320px;
+  background-image: url(bg01.jpg);
+  // max-width: 350px;
+  // min-width: 280px;
+  // @media (min-width: 1280px) {
+  //   width: 480px;
+  // }
+  // @media (max-width: 1100px) {
+  //   width: 320px;
+  // }
+  // @media (max-width: 960px) {
+  //   transform: "translate3d(0, -100%, 0)";
+  //   visibility: hidden !important;
+  //   animation: "300ms ease-in";
+  // }
+}
+#mobile-menu {
+  margin: 0;
+  // width: 240px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 100;
+  background-color: #4e5052;
+  opacity: 0.96;
+
+  ul {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #5e5f61;
+    margin: 0 auto;
+    // max-width: 380px;
+    list-style: none;
+    text-transform: none;
+    padding: 0 20px;
+    li {
+      position: relative;
+      border-top: 1px solid #5e5f61;
+      border-bottom: 1px solid #3d3f41;
+      margin: 0;
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+}
+.menu-header {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  color: #eee;
+  padding: 5px 0 5px 25px;
+  margin: 0;
+  background: #4e5052;
+}
+
+a {
+  text-decoration: none;
+}
+.person {
+  color: white;
+  text-align: center;
+  .person-avatar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+
+    .avatar {
+      border-radius: 50%;
+      max-width: 160px;
+      width: 70%;
+      height: 70%;
+      max-height: 160px;
+      position: absolute;
+      top: 50px;
+    }
+    .person-content {
+      position: absolute;
+      top: 212px;
+      .person-title {
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .person-subtitle {
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.block {
+  margin-top: 45px;
+  padding: 0 20px;
+  .block-title {
+    text-transform: uppercase;
+    padding: 5px 10px 0 0;
+    font-size: 11px;
+    font-weight: 300;
+    color: #aaa;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+  }
+  .social-icons {
+    a {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .button-icon {
+      padding: 0;
+      font-size: 20px;
+      margin-right: 8px;
+    }
+  }
+  // @media (max-width: 960px) {
+  //   display: flex;
+  // }
+}
+
+/* Effect 13: Fall down */
+/*
+.st-container {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%;
+}
+
+.menu-open .st-pusher {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+
+.menu-container {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+.menu-open .menu-container {
+  visibility: visible;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-speed: 0.2s;
+  transition-speed: 0.2s;
+}*/

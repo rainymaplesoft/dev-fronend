@@ -1,0 +1,35 @@
+<nav id="mobile-menu" class="menu-container clearfix slide-open">
+  <a href="/" class="person">
+    <div class="person-avatar">
+      <img src="assets/img/avatar.jpg" alt="" class="avatar">
+      <div class="person-content">
+        <div class="person-title">Jianguo Li</div>
+        <div class="person-subtitle">Full-stack Web developer</div>
+      </div>
+    </div>
+  </a>
+  <ul>
+    <li class="menu-item" *ngFor="let menuItem of menu">
+      <menu-item [menuItem]='menuItem'></menu-item>
+    </li>
+  </ul>
+  <div class="block block-social">
+    <div class="block-title">Get in touch</div>
+    <div class="block-content">
+      <div class="social-icons">
+        <a href="mailto:ljghot@hotmail.com" class="button button-icon" title="mail: ljghot@hotmail.com">
+          <i class="fas fa-envelope-square fa-lg"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rainymaple/" class="button button-icon" title="linkedin: rainymaplesoft">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+
+        <a href="https://github.com/rainymaplesoft?tab=repositories" class="button button-icon"
+          title="github: rainymaplesoft">
+          <i class="fab fa-github-square fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
