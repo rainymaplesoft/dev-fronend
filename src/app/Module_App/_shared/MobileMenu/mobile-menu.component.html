@@ -1,5 +1,12 @@
 <nav id="mobile-menu" class="menu-container clearfix slide-open">
-  <a href="/" class="person">
+
+  <div class="person">
+    <div class="button-wrap">
+      <div class='action-button' (click)='toggleMobileMenu()'>
+        <i class="fas fa-bars" *ngIf="isShowHeader"></i>
+        <i class="fas fa-arrow-up" *ngIf="!isShowHeader"></i>
+      </div>
+    </div>
     <div class="person-avatar">
       <img src="assets/img/avatar.jpg" alt="" class="avatar">
       <div class="person-content">
@@ -7,15 +14,15 @@
         <div class="person-subtitle">Full-stack Web developer</div>
       </div>
     </div>
-  </a>
-  <ul>
+  </div>
+  <ul class='menu-section'>
     <li class="menu-item" *ngFor="let menuItem of menu">
       <menu-item [menuItem]='menuItem'></menu-item>
     </li>
   </ul>
-  <div class="block block-social">
-    <div class="block-title">Get in touch</div>
-    <div class="block-content">
+  <div class="social">
+    <div class="social-title">Get in touch</div>
+    <div class="social-content">
       <div class="social-icons">
         <a href="mailto:ljghot@hotmail.com" class="button button-icon" title="mail: ljghot@hotmail.com">
           <i class="fas fa-envelope-square fa-lg"></i>

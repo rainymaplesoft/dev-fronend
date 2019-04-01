@@ -38,6 +38,7 @@ export class Config {
     {
       menu_text: 'My Skills',
       action: 'skills',
+      show_submenu: true,
       sub_menu: [
         { menu_text: 'Front-End', action: RouteName.ClubSetting },
         { menu_text: 'Back-End', action: RouteName.AccountSetting },
