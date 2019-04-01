@@ -1,0 +1,37 @@
+.container {
+  width: 95%;
+  max-width: 1280px;
+  padding: 0 20px;
+  p {
+    font-size: 24px;
+  }
+}
+blockquote {
+  border-left: 5px solid #795548;
+  color: #795548;
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}
+ul.tech-tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 5px 5px 0;
+    a {
+      display: inline-block;
+      background-color: rgba(175, 34, 34, 0.8);
+      color: #fff;
+      padding: 4px 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

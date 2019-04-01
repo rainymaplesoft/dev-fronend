@@ -2,26 +2,13 @@
   font: 16px/1.6 Roboto, Helvetica, sans-serif;
   font-weight: 300;
 }
-.main-section {
-  max-width: 850px;
-  padding: 10px 25px;
-  background-color: #fff;
-  color: #555;
-}
-.portfolio-section {
-  max-width: 1400px;
-}
-.main-title {
-  line-height: 1;
-  margin-bottom: 15px;
-  color: #555;
-  font-size: 36px;
-  font-weight: 400;
-  text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-}
+
 .site-main-inner {
   position: relative;
+}
+
+.portfolio-section {
+  max-width: 1400px;
 }
 
 .timeline_element-contents {
@@ -38,6 +25,10 @@
         line-height: 1;
         margin-bottom: 0.3em;
         -webkit-font-smoothing: antialiased;
+        &:hover {
+          color: #bb1e1e;
+          cursor: pointer;
+        }
       }
       .project-subtitle {
         font-size: 18px;
@@ -69,7 +60,7 @@
 
 .timeline {
   font-size: 16px;
-  margin-left: -50px;
+  // margin-left: -50px;
 }
 .project-description {
   margin-bottom: 15px;
@@ -90,7 +81,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .portfolio-timeline .project-technologies {
-  margin-top: 30px;
+  margin-top: 10px;
   ul.tech-tags {
     margin: 0;
     padding: 0;
@@ -164,11 +155,10 @@
     left: 0;
     width: 130px;
     padding: 30px 15px;
-    color: #999;
     text-align: right;
     font-style: italic;
     line-height: 30px;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #c3bbbb;
   }
 }
 @media screen and (min-width: 568px) {
@@ -196,6 +186,25 @@
   border-bottom: 1px solid #ddd;
 }
 
+@media screen and (max-width: 568px) {
+  .timeline.portfolio-timeline {
+    margin-left: 0;
+  }
+  .timeline_element-contents {
+    margin-left: 0;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+  .project-title {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .timeline_element-contents .project-image {
+    max-width: 80%;
+  }
+}
 @media screen and (min-width: 568px) {
   .timeline.portfolio-timeline .timeline_element:first-child .timeline_element-date .timeline_element-date-text {
     margin-top: -10px;

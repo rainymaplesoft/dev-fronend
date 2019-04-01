@@ -10,11 +10,13 @@ import { MobileMenuComponent, MenuItemComponent } from './Module_App/_shared/Mob
 import { EventService } from './Module_App/_shared/services/event.service';
 import { AppMaterialModule } from './material.modual';
 import 'hammerjs';
+import { AboutmeComponent } from './Module_App/aboutme/aboutme.component';
+import { SkillsComponent } from './Module_App/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent, MobileMenuComponent, MenuItemComponent
+    HomeComponent, MobileMenuComponent, MenuItemComponent, AboutmeComponent, SkillsComponent
   ],
   imports: [
     BrowserModule,

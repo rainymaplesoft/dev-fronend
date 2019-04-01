@@ -35,14 +35,15 @@ export class Config {
 
   static MobileMenu: IMenuItem[] = [
     { menu_text: 'Portfolio', action: RouteName.Home },
+    { menu_text: 'About Me', action: RouteName.AboutMe },
     {
       menu_text: 'My Skills',
       action: 'skills',
       show_submenu: true,
       sub_menu: [
-        { menu_text: 'Front-End', action: RouteName.ClubSetting },
-        { menu_text: 'Back-End', action: RouteName.AccountSetting },
-        { menu_text: 'Database', action: RouteName.AccountSetting }
+        { menu_text: 'Front-End', action: RouteName.Skills, param: 'front' },
+        { menu_text: 'Back-End', action: RouteName.Skills, param: 'back' },
+        { menu_text: 'Database', action: RouteName.Skills, param: 'data' }
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },

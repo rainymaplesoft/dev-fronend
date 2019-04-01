@@ -39,7 +39,13 @@ export class MenuItemComponent implements OnInit {
         EventName.Event_MenuItemClicked,
         this.menuItem.action
       );
+      sessionStorage.setItem('__activeMenuItem__', this.menuItem.menu_text);
     }
+  }
+
+  get isActiveMenuItem() {
+    const activeMenuItem = sessionStorage.getItem('__activeMenuItem__');
+    return activeMenuItem === this.menuItem.menu_text;
   }
 
   onArrowClick() {

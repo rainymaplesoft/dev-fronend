@@ -4,6 +4,8 @@ import { EventName, Config } from './Module_App/config';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { Observable, fromEvent, Subscription } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
+import RouteName from './routename';
 export interface IWindowResizeInfo {
   isLessThanBreakpoint: boolean;
   width?: number;
@@ -38,7 +40,7 @@ export class AppComponent implements OnInit {
   windowSubscription: Subscription;
   isShowSideBar = false;
 
-  constructor(private eventService: EventService) { }
+  constructor(private router: Router, private eventService: EventService) { }
 
 
   ngOnInit() {
@@ -47,18 +49,21 @@ export class AppComponent implements OnInit {
       .subscribe(r => {
         this.toggleMobileMenu();
       });
+    this.eventService
+      .on<string>(EventName.Event_MenuItemClicked)
+      .subscribe(r => {
+        this.onMenuItemClicked(r);
+      });
     const breakpoint = 960;
     const isLessThanBreakpoint = window.innerWidth < breakpoint;
     this.isShowSideBar = !isLessThanBreakpoint;
 
     this.windowSubscription = this.windowResize().subscribe(windowInfo => {
       if (windowInfo.isCrossed && !windowInfo.isLessThanBreakpoint) {
-        // this.toggleMobileMenu('show');
         this.isShowSideBar = true;
         return;
       }
       if (windowInfo.isCrossed && windowInfo.isLessThanBreakpoint) {
-        // this.toggleMobileMenu('hide');
         this.isShowSideBar = false;
         return;
       }
@@ -67,15 +72,6 @@ export class AppComponent implements OnInit {
 
   toggleMobileMenu(toggle?: string) {
     this.isShowSideBar = !this.isShowSideBar;
-    // if (toggle === 'hide') {
-    //   this.mobileMenuState = 'hide';
-    //   return;
-    // } if (toggle === 'show') {
-    //   this.mobileMenuState = 'show';
-    //   return;
-    // }
-    // this.mobileMenuState = this.mobileMenuState === 'hide' ? 'show' : 'hide';
-    // this.containerState = this.mobileMenuState === 'hide' ? 'normal' : 'right';
   }
 
   containerClick(event: MouseEvent) {
@@ -89,6 +85,11 @@ export class AppComponent implements OnInit {
     if (this.mobileMenuState === 'show') {
       this.mobileMenuState = 'hide';
       this.containerState = 'normal';
+    }
+  }
+  onMenuItemClicked(item: string) {
+    if (item) {
+      this.router.navigate([item]);
     }
   }
 

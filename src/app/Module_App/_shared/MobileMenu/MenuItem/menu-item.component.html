@@ -1,4 +1,4 @@
-<div class="item-wrap" (click)='onItemClick()'>
+<div class="item-wrap" [ngClass]="{active: isActiveMenuItem}" (click)='onItemClick()'>
   <div class="item">{{menuItem.menu_text}}
   </div>
   <div [@rotateAnimate]='arrowState' class="indicator" *ngIf="menuItem.sub_menu">

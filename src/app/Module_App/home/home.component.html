@@ -1,507 +1,681 @@
 <div class="home">
   <div class="site-main-inner">
-    <div class="main-section portfolio-section">
-      <h1 class="main-title">Portfolio</h1>
-
+    <div class="main-title">Portfolio</div>
+    <div class="main-section ">
       <p></p>
-
-      <div class="timeline portfolio-timeline">
-        <ul>
-          <li class="timeline_element timeline_element--now project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Now</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-description">
-                  <strong>Started to create this PROTFOLIO website from scratch on 2019-Mar-30</strong>
-                  <br>with html/javaScript/angular/css3<br>
-                </div>
-              </div>
-              <div class="project-image">
-                <img [src]="imgPortfolio" style='width:300px' />
-              </div>
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Feb 2017–Feb 2019</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">Edplan-Insight Morocco</div>
-                  <div class="project-subtitle">Azure SaaS (Education) platform</div>
-                </div>
-                <div class="project-description">
-                  <p><strong>Edplan-Insight&trade; is built on a robust Microsoft architecture and modern front-end
-                      solution.
-                      Edplan-Insight&trade; enables education district staff manage complex
-                      student performance analysis both individual and in aggregate. </strong></p>
-
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Architect:</strong> Project / Solution. Contribute core features across entire stack
-                    </li>
-                    <li><strong>Design/Implementation/Test: </strong> Front-end/UI/Mobile</li>
-                    <li><strong>Implementation:</strong> Business Services/Service APIs/Admin Module/Data Validation
-                      Module</li>
-                    <li><strong>Implementatione: </strong>Project / Solution</li>
-                    <li><strong>Design/Implementation:</strong> Multilingual Support / Right-to-Left automation</li>
-                    <li><strong>Coaching:</strong> Remote developers (angular, .net core), BI developers (d3.js)</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-
-                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 6</a></li>
-                    <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
-                    <li><a href="https://www.protractortest.org/" rel="nofollow" target="_blank">Protractor/jasmine</a>
-                    </li>
-                    <li><a href="https://github.com/ngxs" rel="nofollow" target="_blank">Redux/ngxs</a></li>
-                    <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
-                        target="_blank">responsive design</a>
-                    </li>
-                    <li><a href="https://docs.microsoft.com/en-us/aspnet/core/" rel="nofollow" target="_blank">asp.net
-                        core 2</a></li>
-                    <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
-                        framework</a></li>
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql server</a></li>
-
-                  </ul>
-                </div>
+      <div class='portfolio-section'>
+        <div class="timeline portfolio-timeline">
+          <ul>
+            <li class="timeline_element timeline_element--now project">
+              <div class="timeline_element-date" [@slideInAnimation]>
+                <time class="timeline_element-date-text">Now</time>
               </div>
 
+              <div class="timeline_element-contents" [@fadeInAnimation]>
+                <div class="project-text">
+                  <div class="project-description">
+                    <strong>Started to create this PROTFOLIO website from scratch on 2019-Mar-30</strong>
+                    <br>with html/javaScript/angular/css3<br>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
 
-              <div class="project-image">
-                <img [src]="imgEdplan" />
-              </div>
+                      <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 6</a></li>
+                      <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
+                      <li><a href="https://www.protractortest.org/" rel="nofollow"
+                          target="_blank">Protractor/jasmine</a>
+                      </li>
+                      <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
+                          target="_blank">responsive
+                          design</a>
+                      </li>
 
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Jun 2018–Mar 2019</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">IEP Online</div>
-                  <div class="project-subtitle">AWS SaaS (Education) platform</div>
+                    </ul>
+                  </div>
                 </div>
-                <div class="project-description">
-                  <p><strong>IEP Online&trade; provides a framework for developing data driven, consistent, compliant
-                      IEPs for students. Educators and
-                      administrators follow a guided sequence of decision points to arrive at a professional,
-                      comprehensive, executable plan,
-                      ready for staff, families, and students alike.</strong></p>
-
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Implementationect: </strong>Change Requests, bugs fixing;</li>
-                    <li><strong>Implementation:</strong> Unit Testing</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
-                    </li>
-
-                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-
-                    <li><a href="https://www.w3.org/XML/" rel="nofollow" target="_blank">xml/json</a></li>
-
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql server</a></li>
-                  </ul>
+                <div class="project-image">
+                  <img [src]="imgPortfolio" />
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgIeponline" />
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date" [@slideInAnimation]>
+                <time class="timeline_element-date-text">Feb 2017–Feb 2019</time>
               </div>
 
-            </div>
-          </li>
+              <div class="timeline_element-contents" [@fadeInAnimation]>
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Edplan-Insight Morocco</div>
+                    <div class="project-subtitle">Azure SaaS (Education) platform</div>
+                  </div>
+                  <div class="project-description">
+                    <p><strong>Edplan-Insight&trade; is built on a robust Microsoft architecture and modern front-end
+                        solution.
+                        Edplan-Insight&trade; enables education district staff manage complex
+                        student performance analysis both individual and in aggregate. </strong></p>
 
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Jul 2016-Dec 2018</time>
-            </div>
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Architect:</strong> Project / Solution. Contribute core features across entire stack
+                      </li>
+                      <li><strong>Design/Implement/Test: </strong> Front-end/UI/Mobile</li>
+                      <li><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data Validation
+                        Module</li>
+                      <li><strong>Implemente: </strong>Project / Solution</li>
+                      <li><strong>Design/Implement:</strong> Multilingual Support / Right-to-Left automation</li>
+                      <li><strong>Coaching:</strong> Remote developers (angular, .net core), BI developers (d3.js)</li>
+                    </ul>
+                  </div>
 
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">Skopus V6</div>
-                  <div class="project-subtitle">Education Services, Web Application</div>
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+
+                      <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 6</a></li>
+                      <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
+                      <li><a href="https://www.protractortest.org/" rel="nofollow"
+                          target="_blank">Protractor/jasmine</a>
+                      </li>
+                      <li><a href="https://github.com/ngxs" rel="nofollow" target="_blank">Redux/ngxs</a></li>
+                      <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
+                          target="_blank">responsive design</a>
+                      </li>
+                      <li><a href="https://docs.microsoft.com/en-us/aspnet/core/" rel="nofollow" target="_blank">asp.net
+                          core 2</a></li>
+                      <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
+                          framework</a></li>
+                      <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
+                          target="_blank">sql server</a></li>
+
+                    </ul>
+                  </div>
                 </div>
-                <div class="project-description">
-                  <p><strong>Skopus&trade; is platform of School data warehousing and school improvement
-                      planning, allows the school divisions to develop the SMART Goals, indicators</strong></p>
-
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Design/Implementation/Test: </strong> Front-end/UI/Mobile</li>
-                    <li><strong>Implementation:</strong> Business Services/Service APIs/Admin Module/Data Validation
-                      Module</li>
-                    <li><strong>Implementatione: </strong>Project / Solution</li>
-                    <li><strong>Design/Implementation:</strong> Multilingual Support</li>
-
-                  </ul>
+                <div class="project-image">
+                  <img [src]="imgEdplan" />
                 </div>
 
-                <div class="project-readmore button button-red">
-                  More details
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Jun 2018–Mar 2019</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">IEP Online</div>
+                    <div class="project-subtitle">AWS SaaS (Education) platform</div>
+                  </div>
+                  <div class="project-description">
+                    <p><strong>IEP Online&trade; provides a framework for developing data driven, consistent, compliant
+                        IEPs for students. Educators and
+                        administrators follow a guided sequence of decision points to arrive at a professional,
+                        comprehensive, executable plan,
+                        ready for staff, families, and students alike.</strong></p>
+
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implementect: </strong>Change Requests, bugs fixing;</li>
+                      <li><strong>Implement:</strong> Unit Testing</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
+                      </li>
+
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+
+                      <li><a href="https://www.w3.org/XML/" rel="nofollow" target="_blank">xml/json</a></li>
+
+                      <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
+                          target="_blank">sql server</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img [src]="imgIeponline" />
                 </div>
 
+              </div>
+            </li>
 
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Jul 2016-Dec 2018</time>
+              </div>
 
-                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 2</a></li>
-                    <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
-                    <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
-                        target="_blank">Karma/jasmine</a>
-                    </li>
-                    <li><a href="https://angular-maps.com/guides/getting-started/" rel="nofollow"
-                        target="_blank">Angular Google Maps (AGM)</a></li>
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">ASP.NET Web
-                        API 2</a></li>
-                    <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
-                        framework</a></li>
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql
-                        server</a></li>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Skopus V6</div>
+                    <div class="project-subtitle">Education Services, Web Application</div>
+                  </div>
+                  <div class="project-description">
+                    <p><strong>Skopus&trade; is platform of School data warehousing and school improvement
+                        planning, allows the school divisions to develop the SMART Goals, indicators</strong></p>
 
-                  </ul>
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Design/Implement/Test: </strong> Front-end/UI/Mobile</li>
+                      <li><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data Validation
+                        Module</li>
+                      <li><strong>Implemente: </strong>Project / Solution</li>
+                      <li><strong>Design/Implement:</strong> Multilingual Support</li>
+
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+
+                      <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 2</a></li>
+                      <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
+                      <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
+                          target="_blank">Karma/jasmine</a>
+                      </li>
+                      <li><a href="https://angular-maps.com/guides/getting-started/" rel="nofollow"
+                          target="_blank">Angular Google Maps (AGM)</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">ASP.NET Web
+                          API 2</a></li>
+                      <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
+                          framework</a></li>
+                      <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
+                          target="_blank">sql
+                          server</a></li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="project-image">
+                  <img [src]="imgSkopus" />
+                </div>
+
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Feb 2014–Feb 2016</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">EasyRMTS</div>
+                    <div class="project-subtitle">Web Application(Education)</div>
+                  </div>
+                  <div class="project-description">
+                    <p>EasyRMTS&trade; is a proprietary web-based random moment sampling tool that is used to conduct
+                      statistically valid random
+                      moment time studies (RMTS) of a group of workers. It assigns a user-determined amount of surveys
+                      to
+                      a group of workers
+                      and administers the surveys via email over a sample period.</p>
+
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Rich UI with AngularJs, jQuery, css</li>
+                      <li><strong>Implement: </strong>Data Access Module, MVC Controller</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://angularjs.org/" rel=nofollow target="_blank">angularjs 1.x</a></li>
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
+                      <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
+                          target="_blank">Karma/jasmine</a>
+                      </li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img [src]="imgEasyRmts" />
+                </div>
+
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Jan 2014–Oct 2014</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Skovision StudentSets</div>
+                    <div class="project-subtitle">Education Services, SharePoint Web Application</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Rich UI with jQuery, css</li>
+                      <li><strong>Implement: </strong>Data Access Module, SharePoint deployment</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://angularjs.org/" rel=nofollow target="_blank">angularjs 1.x</a></li>
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
+                      <li><a href="https://getbootstrap.com/" rel="nofollow" target="_blank">bootstrap</a></li>
+                      <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
+                          target="_blank">responsive design</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img [src]="imgSkovision" />
+                </div>
+
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Apr 2013–Oct 2013</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Edplan-Homeroom</div>
+                    <div class="project-subtitle">A multi-tenant portal of education services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Rich UI with jQuery, css</li>
+                      <li><strong>Implement: </strong>Data Access Module, MVC Controller</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
+                      <li><a href="https://getbootstrap.com/" rel="nofollow" target="_blank">bootstrap</a></li>
+                      <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
+                          target="_blank">responsive design</a>
+                      </li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img [src]="imgHomeroom" />
+                </div>
+
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Jan 2012–Mar 2013</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">CORIS</div>
+                    <div class="project-subtitle">Offender Management System (Virginia Department of Corrections),
+                      ASP.NET
+                      Web Application</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Rich UI with jQuery, css</li>
+                      <li><strong>Implement: </strong>Business Logics, Data Access Components</li>
+                      <li><strong>Implement: </strong>BFinancial Reports, Stored Procedures</li>
+                      <li><strong>Maintenance: </strong>Critical Bugs Fixing, Performance Tuning</li>
+                      <li><strong>Presentation: </strong>CR Hand-Off</li>
+                    </ul>
+                  </div>
+
+                  <div class="project-readmore button button-red">
+                    More details
+                  </div>
+
+
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                      <li><a href="https://en.wikipedia.org/wiki/SQL_Server_Reporting_Services" rel="nofollow"
+                          target="_blank">ssrs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="project-image">
+                  <img [src]="imgCoris" />
+                </div>
+
+              </div>
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Oct 2008–Dec 2011</time>
+              </div>
+
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">American Express (2 weeks)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Online Bank Service</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Research: </strong>for client-side architecture of the project</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Time Warner Cable (3 months)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Cable TV And Network Online Service</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>JavaScript cross-domain communication with the existing Java web
+                        application</li>
+                      <li><strong>Implement: </strong>Business and presentation modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://www.javascript.com/" rel="nofollow" target="_blank">javascript</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <div class="project-image">
-                <img [src]="imgSkopus" />
-              </div>
-
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Feb 2014–Feb 2016</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">EasyRMTS</div>
-                  <div class="project-subtitle">Web Application(Education)</div>
-                </div>
-                <div class="project-description">
-                  <p>EasyRMTS&trade; is a proprietary web-based random moment sampling tool that is used to conduct
-                    statistically valid random
-                    moment time studies (RMTS) of a group of workers. It assigns a user-determined amount of surveys to
-                    a group of workers
-                    and administers the surveys via email over a sample period.</p>
-
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Implementation: </strong>Rich UI with AngularJs, jQuery, css</li>
-                    <li><strong>Implementation: </strong>Data Access Module, MVC Controller</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-                    <li><a href="https://angularjs.org/" rel=nofollow target="_blank">angularjs 1.x</a></li>
-                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-                    <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
-                    <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
-                        target="_blank">Karma/jasmine</a>
-                    </li>
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
-                    </li>
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Higher Ed (9 months)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Online Learning Management</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Media functions with Silverlight. Fix bugs of WPF app</li>
+                      <li><strong>Implement: </strong>Business and Data Access Modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf"
+                          rel="nofollow" target="_blank">XAML</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" rel="nofollow"
+                          target="_blank">wpf</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgEasyRmts" />
-              </div>
 
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Jan 2014–Oct 2014</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">Skovision StudentSets</div>
-                  <div class="project-subtitle">Education Services, SharePoint Web Application</div>
-                </div>
-                <div class="project-description">
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Implementation: </strong>Rich UI with jQuery, css</li>
-                    <li><strong>Implementation: </strong>Data Access Module, SharePoint deployment</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-                    <li><a href="https://angularjs.org/" rel=nofollow target="_blank">angularjs 1.x</a></li>
-                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-                    <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
-                    <li><a href="https://getbootstrap.com/" rel="nofollow" target="_blank">bootstrap</a></li>
-                    <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
-                        target="_blank">responsive design</a></li>
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Constellation (3 months)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Electrical Power Services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>UI with HTML, CSS, jQuery and Ajax</li>
+                      <li><strong>Implement: </strong>Create charts with Silverlight</li>
+                      <li><strong>Implement: </strong>Business and Repository Modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf"
+                          rel="nofollow" target="_blank">XAML</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgSkovision" />
-              </div>
 
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Apr 2013–Oct 2013</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">Edplan-Homeroom</div>
-                  <div class="project-subtitle">A multi-tenant portal of education services</div>
-                </div>
-                <div class="project-description">
-                  <div class="technologies-title">Role/tasks:</div>
-                  <ul class='role'>
-                    <li><strong>Implementation: </strong>Rich UI with jQuery, css</li>
-                    <li><strong>Implementation: </strong>Data Access Module, MVC Controller</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-                    <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
-                    <li><a href="https://getbootstrap.com/" rel="nofollow" target="_blank">bootstrap</a></li>
-                    <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
-                        target="_blank">responsive design</a>
-                    </li>
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
-                        mvc</a>
-                    </li>
-
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">Financial Partner (6 months)</div>
+                    <div class="project-subtitle">Win Form Application, Financial Services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>UI with Dev Express</li>
+                      <li><strong>Implement: </strong>Create/modify reports with Crystal Report</li>
+                      <li><strong>Implement: </strong>Business and Repository Modules</li>
+                      <li><strong>Implement: </strong>Stored Procedures, UDFs and triggers</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://docs.microsoft.com/en-us/dotnet/framework/winforms/" rel="nofollow"
+                          target="_blank">winform</a></li>
+                      <li><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" rel="nofollow"
+                          target="_blank">stored procedure</a></li>
+                      <li><a href="https://www.crystalreports.com/" rel="nofollow" target="_blank">Crystal Report</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgHomeroom" />
-              </div>
-
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Jan 2012–Mar 2013</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">CORIS</div>
-                  <div class="project-subtitle">Offender Management System (Virginia Department of Corrections), ASP.NET
-                    Web Application</div>
-                </div>
-                <div class="project-description">
-
-                  <ul>
-                    <li><strong>Implementation: </strong>Rich UI with jQuery, css</li>
-                    <li><strong>Implementation: </strong>Business Logics, Data Access Components</li>
-                    <li><strong>Implementation: </strong>BFinancial Reports, Stored Procedures</li>
-                    <li><strong>Maintenance: </strong>Critical Bugs Fixing, Performance Tuning</li>
-                    <li><strong>Presentation: </strong>CR Hand-Off</li>
-                  </ul>
-
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-                    <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
-                        mvc</a>
-                    </li>
-                    <li><a href="https://en.wikipedia.org/wiki/SQL_Server_Reporting_Services" rel="nofollow"
-                        target="_blank">ssrs</a>
-                    </li>
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">BC Hydro (3 weeks)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Electrical Power Services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>UI with HTML, CSS, jQuery and Ajax</li>
+                      <li><strong>Implement: </strong>Stored Procedures</li>
+                      <li><strong>Implement: </strong>Business and Repository Modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" rel="nofollow"
+                          target="_blank">stored
+                          procedure</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgCoris" />
-              </div>
-
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">2013</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">FestBlast</div>
-                  <div class="project-subtitle">The best way to enjoy fests</div>
-                </div>
-                <div class="project-description">
-                  <p>A typical example of company website, featuring:</p>
-
-                  <ul>
-                    <li>modern one-page, responsive web design;</li>
-                    <li>custom subpages, gallery, contact form;</li>
-                    <li>admin panel.</li>
-                  </ul>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-
-                    <li><a href="http://php.net" rel="nofollow" target="_blank">PHP</a></li>
-
-                    <li><a href="http://wordpress.org/" rel="nofollow" target="_blank">Wordpress</a></li>
-
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">ADESA (5 months)</div>
+                    <div class="project-subtitle">ASP.NET MVC Web Application, Online Vehicle Auction and Re-marketing
+                      Services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Migrate PowerBuilder Application to MVC Application</li>
+                      <li><strong>Implement: </strong>Reverse engineering</li>
+                      <li><strong>Implement: </strong>Business Modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
+                      <li><a href="https://www.appeon.com/products/appeon-powerbuilder.html" rel="nofollow"
+                          target="_blank">powerbuilder</a></li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                          mvc</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgEdplan" />
-              </div>
 
-            </div>
-          </li>
-
-          <li class="timeline_element project">
-            <div class="timeline_element-date">
-              <time class="timeline_element-date-text">2012 - 2014</time>
-            </div>
-
-            <div class="timeline_element-contents">
-              <div class="project-text">
-                <div class="project-link">
-                  <div class="project-title">FestBlast</div>
-                  <div class="project-subtitle">The best way to enjoy fests</div>
-                </div>
-                <div class="project-description">
-                  <p><em>Slowniki-Pro is a lexicographical project allowing to accomodate all the general and
-                      specialist
-                      dictionaries in just one, online place.</em></p>
-
-                  <p>Whole project includes:</p>
-
-                  <ul>
-                    <li>publicly accessable front-end portal with online dictionaries,</li>
-                    <li>a moderator and reseller panel, allowing to control the sales of the access to the paid
-                      dictionaries,</li>
-                    <li>dictionaries’ editor panel, that allows the Slowniki-Pro and other clients to:
-                      <ul>
-                        <li>create and manage dictionaries from the browser,</li>
-                        <li>manage dictionaries databases and editors’ user accounts,</li>
-                        <li>record audio pronunciation of headwords,</li>
-                        <li>create a printable version of dictionary,</li>
-                        <li>export the dictionary to native dictionary application (available on Windows, Mac and
-                          Linux),</li>
-                        <li>and finally, publish the dictionary onto the Slowniki-Pro platform.</li>
-                      </ul>
-                    </li>
-                  </ul>
-
-                  <p>Written down fully from scratch in custom MVC PHP framework.</p>
-                </div>
-
-                <div class="project-readmore button button-red">
-                  More details
-                </div>
-
-
-                <div class="project-technologies">
-                  <div class="technologies-title">Technologies</div>
-                  <ul class="tech-tags">
-
-                    <li><a href="http://php.net" rel="nofollow" target="_blank">PHP</a></li>
-
-                    <li><a href="http://www.doctrine-project.org/" rel="nofollow" target="_blank">Doctrine ORM</a>
-                    </li>
-
-                  </ul>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">ARUP (9 months)</div>
+                    <div class="project-subtitle">ASP.NET Web Application, Non-Profit Healthcare Services</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Migrate Delphi application to ASP.NET Application</li>
+                      <li><strong>Implement: </strong>UI, reports, charts</li>
+                      <li><strong>Implement: </strong>Business Logic and Data Access Modules</li>
+                    </ul>
+                  </div>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://jquery.com/" rel="nofollow" target="_blank">javascript</a></li>
+                      <li><a href="https://www.embarcadero.com/products/delphi" rel="nofollow"
+                          target="_blank">delphi</a>
+                      </li>
+                      <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="project-image">
-                <img [src]="imgEdplan" />
+            </li>
+
+            <li class="timeline_element project">
+              <div class="timeline_element-date">
+                <time class="timeline_element-date-text">Sep 2007–Sep 2008</time>
               </div>
 
-            </div>
-          </li>
+              <div class="timeline_element-contents">
+                <div class="project-text">
+                  <div class="project-link">
+                    <div class="project-title">BioRunner</div>
+                    <div class="project-subtitle">Embedded Application, Fingerprint Access Control System (IGA
+                      Chateauguay)</div>
+                  </div>
+                  <div class="project-description">
+                    <div class="technologies-title">Role/tasks:</div>
+                    <ul class='role'>
+                      <li><strong>Implement: </strong>Embedded device ROM programming with Embedded C</li>
+                      <li><strong>Implement: </strong>Fingerprint Recognition APIs</li>
+                      <li><strong>Implement: </strong>Winform application for access management</li>
+                    </ul>
+                  </div>
 
-        </ul>
+                  <div class="project-technologies">
+                    <div class="technologies-title">Technologies</div>
+                    <ul class="tech-tags">
+                      <li><a href="https://en.wikipedia.org/wiki/Embedded_C" rel="nofollow" target="_blank">Embedded
+                          C</a>
+                      </li>
+                      <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" rel="nofollow"
+                          target="_blank">C#</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
 

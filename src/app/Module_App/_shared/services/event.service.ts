@@ -53,4 +53,5 @@ export class EventService {
     return this.behaviorSubjects[eventName].asObservable();
   }
   //#endregion
+
 }

@@ -3,8 +3,8 @@ export class RouteName {
     return '';
   }
   static Home = 'home';
-  static Club = 'club';
-  static SignIn = `signin`;
+  static AboutMe = 'about';
+  static Skills = `skills`;
   static SignUp = `signup`;
   static Event = 'event';
   static ClubSetting = 'setting/club';

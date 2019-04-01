@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "src/assets/iconfont/material-icons.css",
               "src/assets/styles/material-theme.scss",
               "src/app/common.scss"

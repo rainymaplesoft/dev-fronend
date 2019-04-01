@@ -3,6 +3,7 @@ import { Config } from '../config';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { Observable, fromEvent, Subscription } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators';
+import { fadeInAnimation } from '../_shared/animation';
 
 const menuSlideAnimate =
   // trigger name for attaching this animation to an element using the [@triggerName] syntax
@@ -20,12 +21,16 @@ const containerSlideAnimate =
     transition('normal => right', animate('200ms')),
     transition('right => normal', animate('200ms'))
   ]);
-
+const slideInAnimation = trigger('slideInAnimation', [
+  transition(':enter', [style({ transform: 'translateX(-50px)' }),
+  animate('.3s', style({ transform: 'translateX(0)' }))
+  ])
+]);
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  animations: [menuSlideAnimate, containerSlideAnimate]
+  animations: [fadeInAnimation, menuSlideAnimate, containerSlideAnimate, slideInAnimation]
 })
 export class HomeComponent implements OnInit {
   imgPortfolio = `/assets/img/portfolio.jpg`;
