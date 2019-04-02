@@ -1,6 +1,6 @@
 <div id="front"></div>
 <div class="site-main-inner">
-  <div class="main-title">Skill Set</div>
+  <div class="main-title">My Skill Set</div>
   <div class="main-section" [@fadeInAnimation]>
     <div class="container flow-text">
       <section id="skills" class="section scrollspy">
@@ -9,34 +9,30 @@
             <div class="card-content">
               <h4 class="brown-text light">HTML/CSS</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/html5.png" class="responsive-img">HTML5
+                <div class="col s4 m2"><img alt="" [src]="getPic('html5')" class="responsive-img">HTML5
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/css3.png" class="responsive-img">CSS3</div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/sass.png" class="responsive-img">SASS</div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/bootstrap.png"
-                    class="responsive-img">Bootstrap
+                <div class="col s4 m2"><img alt="" [src]="getPic('css3')" class="responsive-img">CSS3</div>
+                <div class="col s4 m2"><img alt="" [src]="getPic('sass')" class="responsive-img">SASS</div>
+                <div class="col s4 m2"><img alt="" [src]="getPic('bootstrap')" class="responsive-img">Bootstrap
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/responsive.png"
-                    class="responsive-img">Responsive
+                <div class="col s4 m2"><img alt="" [src]="getPic('responsive')" class="responsive-img">Responsive
                 </div>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-content">
-              <h4 class="brown-text light">Framework/Testing</h4>
+              <h4 class="brown-text light">Testing/Mobile</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/jasmine.png" class="responsive-img">Jasmine
+                <div class="col s4 m2"><img alt="" [src]="getPic('jasmine')" class="responsive-img">Jasmine
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/karma.png" class="responsive-img">Karma
+                <div class="col s4 m2"><img alt="" [src]="getPic('karma')" class="responsive-img">Karma
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/protractor.png"
-                    class="responsive-img">Protractor
+                <div class="col s4 m2"><img alt="" [src]="getPic('protractor')" class="responsive-img">Protractor
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/ionic.png" class="responsive-img">Ionic
+                <div class="col s4 m2"><img alt="" [src]="getPic('ionic')" class="responsive-img">Ionic
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/nativescript.png"
-                    class="responsive-img">NativeScript
+                <div class="col s4 m2"><img alt="" [src]="getPic('nativescript')" class="responsive-img">NativeScript
                 </div>
               </div>
             </div>
@@ -46,17 +42,15 @@
             <div class="card-content">
               <h4 class="brown-text light">Javascript</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/javascript.png"
-                    class="responsive-img">Javascript
+                <div class="col s4 m2"><img alt="" [src]="getPic('javascript')" class="responsive-img">Javascript
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/jquery.png" class="responsive-img">jQuery
+                <div class="col s4 m2"><img alt="" [src]="getPic('jquery')" class="responsive-img">jQuery
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/angular.png" class="responsive-img">Angular
+                <div class="col s4 m2"><img alt="" [src]="getPic('angular')" class="responsive-img">Angular
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/nodejs.png" class="responsive-img">Node
+                <div class="col s4 m2"><img alt="" [src]="getPic('nodejs')" class="responsive-img">Node
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/typescript.png"
-                    class="responsive-img">TypeScript
+                <div class="col s4 m2"><img alt="" [src]="getPic('typescript')" class="responsive-img">TypeScript
                 </div>
               </div>
             </div>
@@ -65,15 +59,15 @@
             <div class="card-content">
               <h4 class="brown-text light">Back-End</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/netcore.png" class="responsive-img">.Net
+                <div class="col s4 m2"><img alt="" [src]="getPic('netcore')" class="responsive-img">.Net
                   Core</div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/csharp.png" class="responsive-img">C#
+                <div class="col s4 m2"><img alt="" [src]="getPic('csharp')" class="responsive-img">C#
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/aspcore.png" class="responsive-img">ASP.NET
+                <div class="col s4 m2"><img alt="" [src]="getPic('aspcore')" class="responsive-img">ASP.NET
                   Core</div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/efcore.png" class="responsive-img">EF Core
+                <div class="col s4 m2"><img alt="" [src]="getPic('efcore')" class="responsive-img">EF Core
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/graphql.png" class="responsive-img">GraphQL
+                <div class="col s4 m2"><img alt="" [src]="getPic('graphql')" class="responsive-img">GraphQL
                 </div>
               </div>
             </div>
@@ -82,12 +76,12 @@
             <div class="card-content">
               <h4 class="brown-text light">Build Tools</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/webpack.png" class="responsive-img">Webpack
+                <div class="col s4 m2"><img alt="" [src]="getPic('webpack')" class="responsive-img">Webpack
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/gulp.png" class="responsive-img">Gulp</div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/grunt.png" class="responsive-img">Grunt
+                <div class="col s4 m2"><img alt="" [src]="getPic('gulp')" class="responsive-img">Gulp</div>
+                <div class="col s4 m2"><img alt="" [src]="getPic('grunt')" class="responsive-img">Grunt
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/bower.png" class="responsive-img">Bower
+                <div class="col s4 m2"><img alt="" [src]="getPic('bower')" class="responsive-img">Bower
                 </div>
               </div>
             </div>
@@ -96,15 +90,14 @@
             <div class="card-content">
               <h4 class="brown-text light">Database</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/sqlserver.png" class="responsive-img">SQL
+                <div class="col s4 m2"><img alt="" [src]="getPic('sqlserver')" class="responsive-img">SQL
                   Server
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/Tsql.png" class="responsive-img">T-SQL
+                <div class="col s4 m2"><img alt="" [src]="getPic('Tsql')" class="responsive-img">T-SQL
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/firebase.png"
-                    class="responsive-img">Firebase
+                <div class="col s4 m2"><img alt="" [src]="getPic('firebase')" class="responsive-img">Firebase
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/mongodb.png" class="responsive-img">MongoDB
+                <div class="col s4 m2"><img alt="" [src]="getPic('mongodb')" class="responsive-img">MongoDB
                 </div>
               </div>
             </div>
@@ -115,16 +108,15 @@
             <div class="card-content">
               <h4 class="brown-text light">Other</h4>
               <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/android.png" class="responsive-img">Android
+                <div class="col s4 m2"><img alt="" [src]="getPic('android')" class="responsive-img">Android
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/vue.png" class="responsive-img">VueJs
+                <div class="col s4 m2"><img alt="" [src]="getPic('vue')" class="responsive-img">VueJs
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/github.png" class="responsive-img">Github
+                <div class="col s4 m2"><img alt="" [src]="getPic('github')" class="responsive-img">Github
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/jira.png" class="responsive-img">JIRA
+                <div class="col s4 m2"><img alt="" [src]="getPic('jira')" class="responsive-img">JIRA
                 </div>
-                <div class="col s4 m2"><img alt="" src="../../../assets/img/photoshop.png"
-                    class="responsive-img">Photoshop
+                <div class="col s4 m2"><img alt="" [src]="getPic('photoshop')" class="responsive-img">Photoshop
                 </div>
               </div>
             </div>

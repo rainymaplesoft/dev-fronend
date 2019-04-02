@@ -33,14 +33,14 @@ const slideInAnimation = trigger('slideInAnimation', [
   animations: [fadeInAnimation, menuSlideAnimate, containerSlideAnimate, slideInAnimation]
 })
 export class HomeComponent implements OnInit {
-  imgPortfolio = `/assets/img/portfolio.jpg`;
-  imgEdplan = `/assets/img/Edplan01.jpg`;
-  imgIeponline = `/assets/img/ieponline01.jpg`;
-  imgSkopus = `/assets/img/skopus01.jpg`;
-  imgSkovision = `/assets/img/skovision.jpg`;
-  imgEasyRmts = `/assets/img/easyRmts.jpg`;
-  imgHomeroom = `/assets/img/homeroom.jpg`;
-  imgCoris = `/assets/img/coris.jpg`;
+  imgPortfolio = `assets/img/portfolio.jpg`;
+  imgEdplan = `assets/img/Edplan01.jpg`;
+  imgIeponline = `assets/img/ieponline01.jpg`;
+  imgSkopus = `assets/img/skopus01.jpg`;
+  imgSkovision = `assets/img/skovision.jpg`;
+  imgEasyRmts = `assets/img/easyRmts.jpg`;
+  imgHomeroom = `assets/img/homeroom.jpg`;
+  imgCoris = `assets/img/coris.jpg`;
   constructor() { }
 
   ngOnInit() {

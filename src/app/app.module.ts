@@ -12,11 +12,12 @@ import { AppMaterialModule } from './material.modual';
 import 'hammerjs';
 import { AboutmeComponent } from './Module_App/aboutme/aboutme.component';
 import { SkillsComponent } from './Module_App/skills/skills.component';
+import { PhotoComponent } from './Module_App/photo/photo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent, MobileMenuComponent, MenuItemComponent, AboutmeComponent, SkillsComponent
+    HomeComponent, MobileMenuComponent, MenuItemComponent, AboutmeComponent, SkillsComponent, PhotoComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +26,7 @@ import { SkillsComponent } from './Module_App/skills/skills.component';
     AppMaterialModule,
     // DO NOT import any lazy-loading module here!!
     RouterModule.forRoot(AppRoutes, {
+      useHash: true
       // scrollPositionRestoration: 'enabled'
     }),
   ],

@@ -35,9 +35,9 @@ export class Config {
 
   static MobileMenu: IMenuItem[] = [
     { menu_text: 'About Me', route: RouteName.AboutMe },
-    { menu_text: 'Portfolio', route: RouteName.Home },
+    { menu_text: 'Work Experience', route: RouteName.Home },
     {
-      menu_text: 'My Skills',
+      menu_text: 'My Skill Set',
       route: 'skills',
       show_submenu: true,
       sub_menu: [
@@ -48,7 +48,7 @@ export class Config {
     },
     // { menu_text: 'Gallery', action: RouteName.Home },
     { menu_text: 'My CV', isLink: true, route: 'https://docs.google.com/document/d/1wilLURW7nKxX_g_wDlyGBfYDjMGx9Du-pRYFw-ed8Ok/edit' },
-
+    { menu_text: 'Some Photos', route: RouteName.Photo },
   ];
 }
 

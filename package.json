@@ -14,7 +14,8 @@
     "build-4": "ng build --output-hashing none",
     "build-5": "xcopy dist build-folder/ey",
     "build-pro": "npm run build-1 && npm run build-2 && npm run build-3 && npm run build-5",
-    "build-app": "npm run build-1 && npm run build-2 && npm run build-4 && npm run build-5"
+    "build-app": "npm run build-1 && npm run build-2 && npm run build-4 && npm run build-5",
+    "build-git": "ng build --prod --output-path docs --base-href /portfoliopub/"
   },
   "private": true,
   "dependencies": {

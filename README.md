@@ -30,3 +30,8 @@ npm install --save hammerjs
 import 'hammerjs';
 
 npm install material-design-icons
+
+## Build for my github's published repository 'portfoliopub'
+## 'doc' is the folder that holds the compiled code,
+## which will be pushed to this repository
+ng build --prod --output-path docs --base-href /portfoliopub/

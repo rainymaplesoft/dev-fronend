@@ -5,7 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss'], animations: [fadeInAnimation]
+  styleUrls: ['./skills.component.scss'],
+  animations: [fadeInAnimation]
 })
 export class SkillsComponent implements OnInit {
 
@@ -36,4 +37,7 @@ export class SkillsComponent implements OnInit {
     });
   }
 
+  getPic(pic: string) {
+    return `assets/img/${pic}.png`;
+  }
 }

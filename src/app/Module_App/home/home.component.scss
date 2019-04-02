@@ -11,6 +11,12 @@
   max-width: 1400px;
 }
 
+.job-title {
+  padding-left: 20px;
+  color: darkcyan;
+  font-weight: 400;
+}
+
 .timeline_element-contents {
   display: flex;
   @media screen and (max-width: 1279px) {

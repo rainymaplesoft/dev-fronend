@@ -11,12 +11,12 @@ body {
 .main-title {
   height: 54px;
   line-height: 1;
-  text-align: center;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 100;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   padding: 12px;
+  padding-left: 50px;
   background-color: teal;
   color: white;
   &::after {
@@ -32,7 +32,9 @@ body {
     border-left-color: transparent;
   }
   @media (max-width: 960px) {
+    text-align: center;
     position: fixed;
+    padding: 12px;
     width: 100%;
     top: 120px;
     z-index: 10;

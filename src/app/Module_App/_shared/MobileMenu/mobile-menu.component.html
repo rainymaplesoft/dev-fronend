@@ -42,23 +42,24 @@
   </div>
 </nav>
 
-<!-- <button mat-button [matMenuTriggerFor]="animals">Animal index</button> -->
-
 <mat-menu #animals="matMenu">
   <button mat-menu-item (click)='nav("about")'>
     <mat-icon>person</mat-icon><span>About Me</span>
   </button>
   <button mat-menu-item (click)='nav("home")'>
-    <mat-icon>web</mat-icon><span>Portfolio</span>
+    <mat-icon>web</mat-icon><span>My Work Experience</span>
   </button>
   <button mat-menu-item [matMenuTriggerFor]="mySkills">
-    <mat-icon>equalizer</mat-icon><span>My Skills</span>
+    <mat-icon>equalizer</mat-icon><span>My Skill Set</span>
   </button>
   <button mat-menu-item>
     <a href="https://docs.google.com/document/d/1wilLURW7nKxX_g_wDlyGBfYDjMGx9Du-pRYFw-ed8Ok/edit?usp=sharing"
       target="blank">
       <mat-icon>description</mat-icon><span>My CV</span>
     </a>
+  </button>
+  <button mat-menu-item (click)='nav("photo")'>
+    <mat-icon>camera</mat-icon><span>Some Photos</span>
   </button>
 </mat-menu>
 

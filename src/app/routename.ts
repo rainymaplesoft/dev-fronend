@@ -6,7 +6,7 @@ export class RouteName {
   static AboutMe = 'about';
   static Skills = `skills`;
   static SignUp = `signup`;
-  static Event = 'event';
+  static Photo = 'photo';
   static ClubSetting = 'setting/club';
   static AccountSetting = 'setting/account';
   static BookingSetting = 'setting/booking';
