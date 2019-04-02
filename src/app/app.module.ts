@@ -24,7 +24,9 @@ import { SkillsComponent } from './Module_App/skills/skills.component';
     // application level modules
     AppMaterialModule,
     // DO NOT import any lazy-loading module here!!
-    RouterModule.forRoot(AppRoutes),
+    RouterModule.forRoot(AppRoutes, {
+      // scrollPositionRestoration: 'enabled'
+    }),
   ],
   providers: [EventService],
   bootstrap: [AppComponent]

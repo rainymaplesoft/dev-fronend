@@ -7,8 +7,9 @@ import { hoverScaleAnimation } from '../animation';
 export interface IMenuItem {
   menu_text: string;
   sub_menu?: IMenuItem[];
-  action?: string;
+  route?: string;
   show_submenu?: boolean;
+  isLink?: boolean;
   param?: string;
 }
 
@@ -32,12 +33,6 @@ export class MobileMenuComponent implements OnInit {
 
   ngOnInit() {
     this.mobileMenuState = this.isShowHeader ? 'head' : 'side';
-    // from MobileMenu
-    // this.eventService
-    //   .on<string>(EventName.Event_MobileToggleClicked)
-    //   .subscribe(r => {
-    //     this.toggleMobileMenu();
-    //   });
   }
 
   toggleMobileMenu() {
@@ -45,7 +40,12 @@ export class MobileMenuComponent implements OnInit {
     this.mobileMenuState = this.mobileMenuState === 'side' ? 'head' : 'side';
     // this.containerState = this.mobileMenuState === 'hide' ? 'normal' : 'right';
   }
-  nav(route: string, withClubId?: boolean) { }
+
+  nav(route: string, param?: string) {
+    if (route) {
+      this.router.navigate([route], { queryParams: { group: param } });
+    }
+  }
 
   setMouseState(p: string) {
     this.hoverState = p;

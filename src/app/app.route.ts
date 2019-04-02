@@ -4,9 +4,9 @@ import { AboutmeComponent } from './Module_App/aboutme/aboutme.component';
 import { SkillsComponent } from './Module_App/skills/skills.component';
 
 export const AppRoutes: Route[] = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutmeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: '**', redirectTo: '/about' }
 ];

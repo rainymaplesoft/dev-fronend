@@ -35,9 +35,15 @@ export class MenuItemComponent implements OnInit {
     if (this.menuItem.sub_menu) {
       this.onArrowClick();
     } else {
-      this.eventService.pub<string>(
+      this.eventService.pub<IMenuItem>(
         EventName.Event_MenuItemClicked,
-        this.menuItem.action
+        {
+          menu_text: this.menuItem.menu_text,
+          route: this.menuItem.route,
+          isLink: this.menuItem.isLink,
+          param: this.menuItem.param
+        }
+
       );
       sessionStorage.setItem('__activeMenuItem__', this.menuItem.menu_text);
     }

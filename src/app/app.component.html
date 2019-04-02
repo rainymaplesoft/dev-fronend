@@ -7,9 +7,10 @@
     [isShowHeader]='!isShowSideBar' [menu]='mobileMenu'>
   </mobile-menu>
   <!-- [@menuToggleAnimate]='mobileMenuState' -->
-  <div class="site-main" [ngClass]="{isShowSideBar: isShowSideBar,isNotShowSideBar:!isShowSideBar}">
+  <div id='mainContainer' #mainContainer class="site-main"
+    [ngClass]="{isShowSideBar: isShowSideBar,isNotShowSideBar:!isShowSideBar}">
     <!-- <div>this is app</div>
     <button (click)='toggleMobileMenu()'>toggle menu</button> -->
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onActivate($event,mainContainer)"></router-outlet>
   </div>
 </div>

@@ -6,6 +6,7 @@ import { Observable, fromEvent, Subscription } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import RouteName from './routename';
+import { IMenuItem } from './Module_App/_shared/MobileMenu';
 export interface IWindowResizeInfo {
   isLessThanBreakpoint: boolean;
   width?: number;
@@ -42,6 +43,9 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router, private eventService: EventService) { }
 
+  onActivate(event, mainContainer) {
+    mainContainer.scrollTop = 0;
+  }
 
   ngOnInit() {
     this.eventService
@@ -50,7 +54,7 @@ export class AppComponent implements OnInit {
         this.toggleMobileMenu();
       });
     this.eventService
-      .on<string>(EventName.Event_MenuItemClicked)
+      .on<IMenuItem>(EventName.Event_MenuItemClicked)
       .subscribe(r => {
         this.onMenuItemClicked(r);
       });
@@ -87,9 +91,12 @@ export class AppComponent implements OnInit {
       this.containerState = 'normal';
     }
   }
-  onMenuItemClicked(item: string) {
+  onMenuItemClicked(item: IMenuItem) {
     if (item) {
-      this.router.navigate([item]);
+      if (item.isLink) {
+        return;
+      }
+      this.router.navigate([item.route], { queryParams: { group: item.param } });
     }
   }
 

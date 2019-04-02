@@ -31,6 +31,12 @@ body {
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+  @media (max-width: 960px) {
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    z-index: 10;
+  }
 }
 .main-section {
   padding: 10px;
@@ -39,4 +45,7 @@ body {
   background-color: #cfdcda;
   margin-left: 16px;
   background: url(./assets/img/bg-square.png) repeat;
+  @media (max-width: 960px) {
+    margin-top: 174px;
+  }
 }

@@ -34,20 +34,20 @@ export class Config {
   };
 
   static MobileMenu: IMenuItem[] = [
-    { menu_text: 'Portfolio', action: RouteName.Home },
-    { menu_text: 'About Me', action: RouteName.AboutMe },
+    { menu_text: 'About Me', route: RouteName.AboutMe },
+    { menu_text: 'Portfolio', route: RouteName.Home },
     {
       menu_text: 'My Skills',
-      action: 'skills',
+      route: 'skills',
       show_submenu: true,
       sub_menu: [
-        { menu_text: 'Front-End', action: RouteName.Skills, param: 'front' },
-        { menu_text: 'Back-End', action: RouteName.Skills, param: 'back' },
-        { menu_text: 'Database', action: RouteName.Skills, param: 'data' }
+        { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
+        { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
+        { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },
-    { menu_text: 'My CV', action: RouteName.SignUp },
+    { menu_text: 'My CV', isLink: true, route: 'https://docs.google.com/document/d/1wilLURW7nKxX_g_wDlyGBfYDjMGx9Du-pRYFw-ed8Ok/edit' },
 
   ];
 }

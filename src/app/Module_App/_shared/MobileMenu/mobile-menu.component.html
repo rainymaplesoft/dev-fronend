@@ -2,9 +2,10 @@
 
   <div class="person">
     <div class="button-wrap">
-      <div class='action-button' (click)='toggleMobileMenu()'>
-        <i class="fas fa-bars" *ngIf="isShowHeader"></i>
-        <i class="fas fa-arrow-up" *ngIf="!isShowHeader"></i>
+      <div class='action-button' [matMenuTriggerFor]="animals">
+        <!-- (click)='toggleMobileMenu()' -->
+        <i class="fas fa-bars"></i>
+        <!-- <i class="fas fa-arrow-up" *ngIf="!isShowHeader"></i> -->
       </div>
     </div>
     <div class="person-avatar">
@@ -40,3 +41,35 @@
     </div>
   </div>
 </nav>
+
+<!-- <button mat-button [matMenuTriggerFor]="animals">Animal index</button> -->
+
+<mat-menu #animals="matMenu">
+  <button mat-menu-item (click)='nav("about")'>
+    <mat-icon>person</mat-icon><span>About Me</span>
+  </button>
+  <button mat-menu-item (click)='nav("home")'>
+    <mat-icon>web</mat-icon><span>Portfolio</span>
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="mySkills">
+    <mat-icon>equalizer</mat-icon><span>My Skills</span>
+  </button>
+  <button mat-menu-item>
+    <a href="https://docs.google.com/document/d/1wilLURW7nKxX_g_wDlyGBfYDjMGx9Du-pRYFw-ed8Ok/edit?usp=sharing"
+      target="blank">
+      <mat-icon>description</mat-icon><span>My CV</span>
+    </a>
+  </button>
+</mat-menu>
+
+<mat-menu #mySkills="matMenu">
+  <button mat-menu-item (click)='nav("skills","front")'>
+    <mat-icon>devices</mat-icon><span>Front-End</span>
+  </button>
+  <button mat-menu-item (click)='nav("skills","back")'>
+    <mat-icon>code</mat-icon><span>Back-End</span>
+  </button>
+  <button mat-menu-item (click)='nav("skills","data")'>
+    <mat-icon>dns</mat-icon><span>Database</span>
+  </button>
+</mat-menu>
