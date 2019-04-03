@@ -44,7 +44,9 @@ export class AppComponent implements OnInit {
   constructor(private router: Router, private eventService: EventService) { }
 
   onActivate(event, mainContainer) {
-    mainContainer.scrollTop = 0;
+    if (mainContainer) {
+      mainContainer.scrollTop = 0;
+    }
   }
 
   ngOnInit() {

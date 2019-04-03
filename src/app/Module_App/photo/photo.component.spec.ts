@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PhotoComponent } from './photo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppMaterialModule } from 'src/app/material.modual';
 
 describe('PhotoComponent', () => {
   let component: PhotoComponent;
@@ -8,9 +11,11 @@ describe('PhotoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PhotoComponent ]
+      imports: [BrowserModule,
+        BrowserAnimationsModule, AppMaterialModule],
+      declarations: [PhotoComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

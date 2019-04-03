@@ -21,7 +21,7 @@ export class MenuItemComponent implements OnInit {
   constructor(private eventService: EventService) { }
 
   ngOnInit() {
-    if (this.menuItem.show_submenu) {
+    if (this.menuItem && this.menuItem.show_submenu) {
       this.arrowState = 'right';
       this.subMenuState = 'show';
       return;
@@ -32,6 +32,9 @@ export class MenuItemComponent implements OnInit {
   }
 
   onItemClick() {
+    if (!this.menuItem) {
+      return;
+    }
     if (this.menuItem.sub_menu) {
       this.onArrowClick();
     } else {
@@ -51,7 +54,7 @@ export class MenuItemComponent implements OnInit {
 
   get isActiveMenuItem() {
     const activeMenuItem = sessionStorage.getItem('__activeMenuItem__');
-    return activeMenuItem === this.menuItem.menu_text;
+    return activeMenuItem === (this.menuItem ? this.menuItem.menu_text : '');
   }
 
   onArrowClick() {

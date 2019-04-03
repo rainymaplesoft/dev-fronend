@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Module_App/home/home.component';
 import { RouterModule } from '@angular/router';
-import { AppRoutes } from './app.route';
+import { AppRoutes, RootComponents } from './app.route';
 import { MobileMenuComponent, MenuItemComponent } from './Module_App/_shared/MobileMenu';
 import { EventService } from './Module_App/_shared/services/event.service';
 import { AppMaterialModule } from './material.modual';
@@ -15,10 +15,7 @@ import { SkillsComponent } from './Module_App/skills/skills.component';
 import { PhotoComponent } from './Module_App/photo/photo.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent, MobileMenuComponent, MenuItemComponent, AboutmeComponent, SkillsComponent, PhotoComponent
-  ],
+  declarations: RootComponents,
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -1,14 +1,14 @@
 <div class="item-wrap" [ngClass]="{active: isActiveMenuItem}" (click)='onItemClick()'>
-  <div class="item" *ngIf="!menuItem.isLink">{{menuItem.menu_text}}</div>
-  <div class="item" *ngIf="menuItem.isLink">
-    <a [attr.href]="menuItem.route" target="blank">{{menuItem.menu_text}}</a>
+  <div class="item" *ngIf="!menuItem?.isLink">{{menuItem?.menu_text}}</div>
+  <div class="item" *ngIf="menuItem?.isLink">
+    <a [attr.href]="menuItem.route" target="blank">{{menuItem?.menu_text}}</a>
   </div>
-  <div [@rotateAnimate]='arrowState' class="indicator" *ngIf="menuItem.sub_menu">
+  <div [@rotateAnimate]='arrowState' class="indicator" *ngIf="menuItem?.sub_menu">
     <mat-icon>keyboard_arrow_right</mat-icon>
   </div>
 </div>
 <ul [@pullUpDownAnimate]='subMenuState'>
-  <li class="menu-item" *ngFor="let subMenuItem of menuItem.sub_menu">
+  <li class="menu-item" *ngFor="let subMenuItem of menuItem?.sub_menu">
     <menu-item [menuItem]='subMenuItem'></menu-item>
   </li>
 </ul>

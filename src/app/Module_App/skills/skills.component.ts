@@ -13,11 +13,11 @@ export class SkillsComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe((param) => {
+    this.route.paramMap.subscribe((param) => {
       if (!param) {
         return;
       }
-      const id = param['group'];
+      const id = param.get('group');
       if (!id) {
         return;
       }
@@ -26,8 +26,10 @@ export class SkillsComponent implements OnInit {
         return;
       }
       if (id === 'front') {
-        // el.scrollTop = 0;
-        document.getElementById('mainContainer').scrollTop = 0;
+        const mainContainer = document.getElementById('mainContainer');
+        if (mainContainer) {
+          mainContainer.scrollTop = 0;
+        }
         return;
       }
       // el.scrollTop = 0;
