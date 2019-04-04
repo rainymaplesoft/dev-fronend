@@ -41,9 +41,12 @@ export class Config {
       route: 'skills',
       show_submenu: true,
       sub_menu: [
-        { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
-        { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
-        { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
+        // { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
+        // { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
+        // { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
+        { menu_text: 'Front-End', route: `${RouteName.Skills}/front` },
+        { menu_text: 'Back-End', route: `${RouteName.Skills}/back` },
+        { menu_text: 'Database', route: `${RouteName.Skills}/data` }
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },

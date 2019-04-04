@@ -99,6 +99,7 @@ export class AppComponent implements OnInit {
         return;
       }
       this.router.navigate([item.route], { queryParams: { group: item.param } });
+      // this.router.navigate([item.route, item.param]);
     }
   }
 

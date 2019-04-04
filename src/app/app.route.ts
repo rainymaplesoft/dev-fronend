@@ -11,6 +11,7 @@ export const AppRoutes: Route[] = [
   { path: 'about', component: AboutmeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'skills', component: SkillsComponent },
+  { path: 'skills/:group', component: SkillsComponent },
   { path: 'photo', component: PhotoComponent },
   { path: '**', redirectTo: '/about' }
 ];

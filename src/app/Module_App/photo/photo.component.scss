@@ -1,3 +1,4 @@
+$maxWidthImage: 800px;
 .container {
   display: flex;
   max-width: 1100px;
@@ -6,16 +7,21 @@
     margin: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
     img {
-      max-width: 800px;
+      max-width: $maxWidthImage;
       height: auto;
-      width: auto;
+      width: 100%;
     }
     .pic-desc {
+      max-width: $maxWidthImage;
       text-align: center;
       padding: 3px;
       color: teal;
       font-size: 20px;
+      @media screen and (max-width: 460px) {
+        font-size: 16px;
+      }
     }
   }
 }

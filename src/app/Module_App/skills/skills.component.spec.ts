@@ -13,6 +13,7 @@ describe('SkillsComponent', () => {
   let activatedRouteStub: ActivatedRouteStub;
 
   //  spyOn(usersService, 'findOne').and.returnValue(of(userResponse));
+
   beforeEach(async(() => {
     activatedRouteStub = new ActivatedRouteStub();
     TestBed.configureTestingModule({

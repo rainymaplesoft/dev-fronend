@@ -10,61 +10,84 @@ $gt-sm: 960px;
   background-image: url(bg01.jpg);
   box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
   @media (max-width: $gt-sm) {
-    &.isShowHeader {
-      z-index: 100;
-      position: fixed;
+    // &.isShowHeader {
+    height: 120px;
+    z-index: 100;
+    position: fixed;
+    // height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    #mobile-menu {
+      position: relative;
       height: auto;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      #mobile-menu {
-        position: relative;
-        height: auto;
-        width: 100%;
+      .menu-section {
+        display: none; //
+      }
+      .person {
         display: flex;
-        justify-content: space-between;
-        .menu-section {
-          display: none; //
+        .person-avatar {
+          padding: 10px;
+          justify-content: flex-start;
+          .avatar {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin-left: 30px;
+            top: 0;
+          }
+          .person-content {
+            position: static;
+            padding: 15px 20px;
+          }
         }
-        .person {
-          display: flex;
-          .person-avatar {
-            padding: 10px;
-            justify-content: flex-start;
-            .avatar {
-              width: 100px;
-              height: 100px;
-              position: relative;
-              margin-left: 30px;
-              top: 0;
+      }
+      .block {
+        display: flex;
+      }
+    }
+    .action-button {
+      top: 92px;
+    }
+
+    // }
+  }
+  @media (max-width: 460px) {
+    // &.isShowHeader {
+    height: 80px;
+    #mobile-menu {
+      .person {
+        width: 100%;
+        .person-avatar {
+          justify-content: center;
+          .avatar {
+            width: 50px !important;
+            height: 50px !important;
+            margin-left: 0;
+          }
+          .person-content {
+            position: static;
+            padding: 5px 15px;
+            .person-title {
+              font-size: 16px !important;
             }
-            .person-content {
-              position: static;
-              padding: 15px 20px;
+            .person-subtitle {
+              font-size: 12px !important;
             }
           }
         }
-        .block {
-          display: flex;
-        }
-      }
-      .action-button {
-        top: 92px !important;
       }
     }
-  }
-  @media (max-width: 460px) {
-    &.isShowHeader {
-      .person-title {
-        font-size: 16px !important;
-      }
-      .person-subtitle {
-        font-size: 12px !important;
-      }
-      .social {
-        display: none;
-      }
+    .social {
+      display: none;
     }
+    .action-button {
+      top: 50px !important;
+    }
+    // }
   }
   @media (max-width: 600px) {
     &.isShowHeader {
@@ -195,7 +218,7 @@ a {
   }
   .action-button {
     position: fixed;
-    top: 12px;
+    top: 93px;
     z-index: 1000;
     border-radius: 50%;
     border: 5px solid teal;

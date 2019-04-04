@@ -25,13 +25,7 @@ export class SkillsComponent implements OnInit {
       if (!el) {
         return;
       }
-      if (id === 'front') {
-        const mainContainer = document.getElementById('mainContainer');
-        if (mainContainer) {
-          mainContainer.scrollTop = 0;
-        }
-        return;
-      }
+
       // el.scrollTop = 0;
       // el.scrollIntoView({ behavior: 'smooth' });
       el.scrollIntoView(true);

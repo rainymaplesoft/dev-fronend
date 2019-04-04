@@ -4,8 +4,20 @@ body {
   font: 16px/1.6 Roboto, Helvetica, sans-serif;
   font-weight: 300;
 }
-.site-main-inner {
+.main-content {
   position: relative;
+  width: 100%;
+  @media (max-width: 960px) {
+    overflow-y: auto;
+    height: 100%;
+    position: fixed;
+    top: 174px;
+    height: calc(100% - 174px);
+  }
+  @media (max-width: 460px) {
+    top: 116px;
+    height: calc(100% - 116px);
+  }
 }
 
 .main-title {
@@ -39,8 +51,18 @@ body {
     top: 120px;
     z-index: 10;
   }
+  @media (max-width: 460px) {
+    font-size: 18px;
+    height: 36px;
+    top: 80px;
+    &::after {
+      top: 36px;
+    }
+  }
 }
 .main-section {
+  overflow-y: auto;
+  height: 100%;
   padding: 10px;
   background-color: #fff;
   color: #555;
@@ -48,6 +70,10 @@ body {
   margin-left: 16px;
   background: url(./assets/img/bg-square.png) repeat;
   @media (max-width: 960px) {
-    margin-top: 174px;
+    // margin-top: 174px;
+    // overflow-y: auto;
+    // height: 100%;
+    // position: fixed;
+    // top: 174px;
   }
 }
