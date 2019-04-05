@@ -50,7 +50,10 @@ export class Config {
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },
-    { menu_text: 'My CV', isLink: true, route: 'https://docs.google.com/document/d/1wilLURW7nKxX_g_wDlyGBfYDjMGx9Du-pRYFw-ed8Ok/edit' },
+    {
+      menu_text: 'My CV', isLink: true,
+      route: 'https://docs.google.com/document/d/1BMQjPnOm0rpTjM4dCCYmQ8WvQurAL3sD9b0ysh5Wj1E/edit?usp=sharing'
+    },
     { menu_text: 'Some Photos', route: RouteName.Photo },
   ];
 }
