@@ -4,7 +4,7 @@ import { EventName, Config } from './Module_App/config';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 import { Observable, fromEvent, Subscription } from 'rxjs';
 import { map, filter, tap } from 'rxjs/operators';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import RouteName from './routename';
 import { IMenuItem } from './Module_App/_shared/MobileMenu';
 export interface IWindowResizeInfo {
@@ -35,13 +35,13 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   mobileMenuState = 'show'; // hide/show
   containerState = 'normal'; // normal/right
-  mobileMenu = Config.MobileMenu;
+  mobileMenu = Config.MobileMenuFE;
   isShowSettings = true;
   private _window_privious_width: number;
   windowSubscription: Subscription;
   isShowSideBar = false;
 
-  constructor(private router: Router, private eventService: EventService) { }
+  constructor(private router: Router, private route: ActivatedRoute, private eventService: EventService) { }
 
   onActivate(event, mainContainer) {
     if (mainContainer) {
@@ -50,6 +50,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (location.href.indexOf('/fe/')) {
+      this.mobileMenu = Config.MobileMenuFE;
+    } else {
+      this.mobileMenu = Config.MobileMenuFS;
+    }
     this.eventService
       .on<string>(EventName.Event_MobileToggleClicked)
       .subscribe(r => {
@@ -82,12 +87,12 @@ export class AppComponent implements OnInit {
 
   containerClick(event: MouseEvent) {
     const toggleButtonId = 'mobile-menu-toggle';
-    if (
-      event.srcElement.id === toggleButtonId ||
-      event.srcElement.parentElement.id === toggleButtonId
-    ) {
-      return;
-    }
+    // if (
+
+    // ) {
+    //   return;
+    // }
+    return;
     if (this.mobileMenuState === 'show') {
       this.mobileMenuState = 'hide';
       this.containerState = 'normal';

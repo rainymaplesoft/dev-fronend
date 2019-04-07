@@ -1,14 +1,12 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { MobileMenuComponent, MenuItemComponent } from './Module_App/_shared/MobileMenu';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './material.modual';
 import { EventService } from './Module_App/_shared/services/event.service';
 import { AppRoutes, RootComponents } from './app.route';
-import { AboutmeComponent } from './Module_App/aboutme/aboutme.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({

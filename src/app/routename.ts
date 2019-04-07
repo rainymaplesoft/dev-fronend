@@ -2,16 +2,23 @@ export class RouteName {
   get default() {
     return '';
   }
-  static Home = 'home';
-  static AboutMe = 'about';
-  static Skills = `skills`;
+
+  static Exception = 'fe/exception';
+  static FE_Home = 'fe/home';
+  static FE_About = 'fe/about';
+  static FE_Skills = 'fe/skills';
+  static FE_Photo = 'fe/photo';
+  static FS_Home = 'fs/home';
+  static FS_About = 'fs/about';
+  static FS_Skills = `fs/skills`;
+  static FS_Photo = 'fs/photo';
+
+
   static SignUp = `signup`;
-  static Photo = 'photo';
   static ClubSetting = 'setting/club';
   static AccountSetting = 'setting/account';
   static BookingSetting = 'setting/booking';
   static User = `setting/user`;
-  static Exception = 'Exception';
 
   static GeoSchoolInfo = 'schoolinfo';
 
@@ -20,6 +27,6 @@ export class RouteName {
   static EditClient = 'editclient';
   static ManageTerm = 'manageterm';
 
-  static DefaultRoute = RouteName.Home;
+  static DefaultRoute = RouteName.FE_Home;
 }
 export default RouteName;

@@ -33,9 +33,9 @@ export class Config {
     emailExists: { emailExists: true }
   };
 
-  static MobileMenu: IMenuItem[] = [
-    { menu_text: 'About Me', route: RouteName.AboutMe },
-    { menu_text: 'Work Experience', route: RouteName.Home },
+  static MobileMenuFE: IMenuItem[] = [
+    { menu_text: 'About Me', route: RouteName.FE_About },
+    { menu_text: 'Work Experience', route: RouteName.FE_Home },
     {
       menu_text: 'My Skill Set',
       route: 'skills',
@@ -44,17 +44,42 @@ export class Config {
         // { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
         // { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
         // { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
-        { menu_text: 'Front-End', route: `${RouteName.Skills}/front` },
-        { menu_text: 'Back-End', route: `${RouteName.Skills}/back` },
-        { menu_text: 'Database', route: `${RouteName.Skills}/data` }
+        { menu_text: 'Front-End', route: `${RouteName.FE_Skills}/front` },
+        { menu_text: 'Back-End', route: `${RouteName.FE_Skills}/back` },
+        { menu_text: 'Database', route: `${RouteName.FE_Skills}/data` }
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },
     {
       menu_text: 'My CV', isLink: true,
-      route: 'https://docs.google.com/document/d/1BMQjPnOm0rpTjM4dCCYmQ8WvQurAL3sD9b0ysh5Wj1E/edit?usp=sharing'
+      route: 'https://docs.google.com/document/d/1p4xpiX-3f1DbFQpeIbHSH934CcGFAAiZJlRtIokcPO0/edit?usp=sharing'
     },
-    { menu_text: 'Some Photos', route: RouteName.Photo },
+    { menu_text: 'Some Photos', route: RouteName.FE_Photo },
+  ];
+
+
+  static MobileMenuFS: IMenuItem[] = [
+    { menu_text: 'About Me', route: RouteName.FE_About },
+    { menu_text: 'Work Experience', route: RouteName.FE_Home },
+    {
+      menu_text: 'My Skill Set',
+      route: 'skills',
+      show_submenu: true,
+      sub_menu: [
+        // { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
+        // { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
+        // { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
+        { menu_text: 'Front-End', route: `${RouteName.FE_Skills}/front` },
+        { menu_text: 'Back-End', route: `${RouteName.FE_Skills}/back` },
+        { menu_text: 'Database', route: `${RouteName.FE_Skills}/data` }
+      ]
+    },
+    // { menu_text: 'Gallery', action: RouteName.Home },
+    {
+      menu_text: 'My CV', isLink: true,
+      route: 'https://docs.google.com/document/d/1p4xpiX-3f1DbFQpeIbHSH934CcGFAAiZJlRtIokcPO0/edit?usp=sharing'
+    },
+    { menu_text: 'Some Photos', route: RouteName.FE_Photo },
   ];
 }
 
@@ -88,4 +113,30 @@ export enum EventName {
   Event_LoggedInUserChanged = 'Event_LoggedInUserChanged',
   Event_SignIn = 'Event_SignIn',
   Event_SignOut = 'Event_SignOut'
+}
+
+export interface IKeyValue {
+  key: string;
+  value: string;
+}
+
+export interface ISelection {
+  id: any;
+  name: string;
+  selected: boolean;
+}
+export enum DialogConfirm {
+  Yes = 'YES',
+  No = 'NO',
+  Ok = 'OK'
+}
+
+export enum DirectionKey {
+  None = 0, Enter = 13, Left = 37, Up, Right, Down
+}
+
+export class ErrorCode {
+  static ServerError = '500';
+  static NotFound = '404';
+  static Unauthorized = '401';
 }
