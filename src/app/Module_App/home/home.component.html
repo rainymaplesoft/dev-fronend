@@ -20,13 +20,12 @@
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
 
-                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 6</a></li>
+                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 7</a></li>
                     <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
                     <li><a href="https://www.protractortest.org/" rel="nofollow" target="_blank">Protractor/jasmine</a>
                     </li>
                     <li><a href="https://www.w3schools.com/html/html_responsive.asp" rel="nofollow"
-                        target="_blank">responsive
-                        design</a>
+                        target="_blank">responsive design</a>
                     </li>
 
                   </ul>
@@ -48,7 +47,7 @@
                 <div class="project-link">
                   <div class="project-title">Edplan-Insight Morocco</div>
                   <div class="project-subtitle">Azure SaaS (Education) platform</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 8</div>
+                  <div class="job-title">Senior Web Developer -Team Members: 8</div>
                 </div>
                 <div class="project-description">
                   <p><strong>Edplan-Insight&trade; is built on a robust Microsoft architecture and modern front-end
@@ -58,10 +57,13 @@
 
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
-                    <li><strong>Architect:</strong> Project / Solution. Contribute core features across entire stack
+                    <li><strong>Architect:</strong> Project / Solution. Contribute core features
+                      <span *ngIf="isFront"> of front-end</span>
+                      <span *ngIf="!isFront">across entire stack</span>
                     </li>
                     <li><strong>Design/Implement/Test: </strong> Front-end/UI/Mobile</li>
-                    <li><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data Validation
+                    <li *ngIf="!isFront"><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data
+                      Validation
                       Module</li>
                     <li><strong>Implemente: </strong>Project / Solution</li>
                     <li><strong>Design/Implement:</strong> Multilingual Support / Right-to-Left automation</li>
@@ -78,6 +80,8 @@
                   <ul class="tech-tags">
 
                     <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 6</a></li>
+                    <li><a href="https://angular-maps.com/guides/getting-started/" rel="nofollow"
+                        target="_blank">Angular Google Maps (AGM)</a></li>
                     <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
                     <li><a href="https://www.protractortest.org/" rel="nofollow" target="_blank">Protractor/jasmine</a>
                     </li>
@@ -87,10 +91,11 @@
                     </li>
                     <li><a href="https://docs.microsoft.com/en-us/aspnet/core/" rel="nofollow" target="_blank">asp.net
                         core 2</a></li>
-                    <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
+                    <li *ngIf="!isFront"><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow"
+                        target="_blank">entity
                         framework</a></li>
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql server</a></li>
+                    <li *ngIf="!isFront"><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017"
+                        rel="nofollow" target="_blank">sql server</a></li>
 
                   </ul>
                 </div>
@@ -112,7 +117,7 @@
                 <div class="project-link">
                   <div class="project-title">IEP Online</div>
                   <div class="project-subtitle">AWS SaaS (Education) platform</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 10</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 10</div>
                 </div>
                 <div class="project-description">
                   <p><strong>IEP Online&trade; provides a framework for developing data driven, consistent, compliant
@@ -123,8 +128,8 @@
 
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
-                    <li><strong>Implementect: </strong>Change Requests, bugs fixing;</li>
-                    <li><strong>Implement:</strong> Unit Testing</li>
+                    <li><strong>Implement: </strong>UI, Front-End logics, unit testing</li>
+                    <li><strong>Implement: </strong>Change Requests, bugs fixing</li>
                   </ul>
                 </div>
 
@@ -137,15 +142,16 @@
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
 
-                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
-                    </li>
 
                     <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
 
-                    <li><a href="https://www.w3.org/XML/" rel="nofollow" target="_blank">xml/json</a></li>
+                    <li><a href="https://www.w3.org/XML/" rel="nofollow" target="_blank">xml/json/ajax</a></li>
 
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql server</a></li>
+                    <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
+                    </li>
+
+                    <li *ngIf="!isFront"><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017"
+                        rel="nofollow" target="_blank">sql server</a></li>
                   </ul>
                 </div>
               </div>
@@ -158,7 +164,7 @@
 
           <li class="timeline_element project">
             <div class="timeline_element-date">
-              <time class="timeline_element-date-text">Jul 2016-Dec 2018</time>
+              <time class="timeline_element-date-text">Mar 2016-Dec 2018</time>
             </div>
 
             <div class="timeline_element-contents">
@@ -166,7 +172,7 @@
                 <div class="project-link">
                   <div class="project-title">Skopus V6</div>
                   <div class="project-subtitle">Education Services, Web Application</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 8</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 8</div>
                 </div>
                 <div class="project-description">
                   <p><strong>Skopus&trade; is platform of School data warehousing and school improvement
@@ -174,11 +180,12 @@
 
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
-                    <li><strong>Design/Implement/Test: </strong> Front-end/UI/Mobile</li>
-                    <li><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data Validation
+                    <li><strong>Design/Implement/Test: </strong> Front-end/UI with ReactJS</li>
+                    <li *ngIf="!isFront"><strong>Implement:</strong> Business Services/Service APIs/Admin Module/Data
+                      Validation
                       Module</li>
-                    <li><strong>Implemente: </strong>Project / Solution</li>
-                    <li><strong>Design/Implement:</strong> Multilingual Support</li>
+                    <li *ngIf="!isFront"><strong>Implemente: </strong>Project / Solution</li>
+                    <li><strong>Design/Implement:</strong> Multilingual UI</li>
 
                   </ul>
                 </div>
@@ -192,19 +199,17 @@
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
 
-                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular 2</a></li>
+                    <li><a href="https://angular.io/" rel="nofollow" target="_blank">reactjs</a></li>
                     <li><a href="https://sass-lang.com/" rel="nofollow" target="_blank">css3/sass</a></li>
-                    <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
-                        target="_blank">Karma/jasmine</a>
+                    <li><a href="https://jestjs.io/" rel="nofollow" target="_blank">jest</a>
                     </li>
-                    <li><a href="https://angular-maps.com/guides/getting-started/" rel="nofollow"
-                        target="_blank">Angular Google Maps (AGM)</a></li>
                     <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">ASP.NET Web
                         API 2</a></li>
-                    <li><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow" target="_blank">entity
+                    <li *ngIf="!isFront"><a href="https://docs.microsoft.com/en-us/ef/" rel="nofollow"
+                        target="_blank">entity
                         framework</a></li>
-                    <li><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017" rel="nofollow"
-                        target="_blank">sql
+                    <li *ngIf="!isFront"><a href="https://www.microsoft.com/en-ca/sql-server/sql-server-2017"
+                        rel="nofollow" target="_blank">sql
                         server</a></li>
 
                   </ul>
@@ -228,15 +233,13 @@
                 <div class="project-link">
                   <div class="project-title">EasyRMTS</div>
                   <div class="project-subtitle">Web Application(Education)</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 12</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 12</div>
                 </div>
                 <div class="project-description">
                   <p>EasyRMTS&trade; is a proprietary web-based random moment sampling tool that is used to conduct
                     statistically valid random
                     moment time studies (RMTS) of a group of workers. It assigns a user-determined amount of surveys
-                    to
-                    a group of workers
-                    and administers the surveys via email over a sample period.</p>
+                    to a group of workers and administers the surveys via email over a sample period.</p>
 
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
@@ -256,7 +259,7 @@
                     <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
                     <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jquery ui</a></li>
                     <li><a href="https://karma-runner.github.io/latest/index.html" rel="nofollow"
-                        target="_blank">Karma/jasmine</a>
+                        target="_blank">jasmine</a>
                     </li>
                     <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net</a>
                     </li>
@@ -280,7 +283,7 @@
                 <div class="project-link">
                   <div class="project-title">Skovision StudentSets</div>
                   <div class="project-subtitle">Education Services, SharePoint Web Application</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 10</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 10</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
@@ -325,7 +328,7 @@
                 <div class="project-link">
                   <div class="project-title">Edplan-Homeroom</div>
                   <div class="project-subtitle">A multi-tenant portal of education services</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 5</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 5</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
@@ -375,24 +378,22 @@
                   <div class="project-subtitle">Offender Management System (Virginia Department of Corrections),
                     ASP.NET
                     Web Application</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 30+</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 30+</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
                     <li><strong>Implement: </strong>Rich UI with jQuery, css</li>
-                    <li><strong>Implement: </strong>Business Logics, Data Access Components</li>
-                    <li><strong>Implement: </strong>BFinancial Reports, Stored Procedures</li>
+                    <li><strong>Implement: </strong>Web Component</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Business Logics, Data Access Components</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Financial Reports, Stored Procedures</li>
                     <li><strong>Maintenance: </strong>Critical Bugs Fixing, Performance Tuning</li>
-                    <li><strong>Presentation: </strong>CR Hand-Off</li>
+                    <li *ngIf="!isFront"><strong>Presentation: </strong>CR Hand-Off</li>
                   </ul>
                 </div>
-
                 <div class="project-readmore button button-red">
                   More details
                 </div>
-
-
                 <div class="project-technologies">
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
@@ -401,8 +402,8 @@
                     <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
                         mvc</a>
                     </li>
-                    <li><a href="https://en.wikipedia.org/wiki/SQL_Server_Reporting_Services" rel="nofollow"
-                        target="_blank">ssrs</a>
+                    <li *ngIf="!isFront"><a href="https://en.wikipedia.org/wiki/SQL_Server_Reporting_Services"
+                        rel="nofollow" target="_blank">ssrs</a>
                     </li>
                   </ul>
                 </div>
@@ -424,7 +425,7 @@
                 <div class="project-link">
                   <div class="project-title">American Express (2 weeks)</div>
                   <div class="project-subtitle">ASP.NET MVC Web Application, Online Bank Service</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 20+</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 20+</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
@@ -449,14 +450,14 @@
                 <div class="project-link">
                   <div class="project-title">Time Warner Cable (3 months)</div>
                   <div class="project-subtitle">ASP.NET MVC Web Application, Cable TV And Network Online Service</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 16</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 16</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
                     <li><strong>Implement: </strong>JavaScript cross-domain communication with the existing Java web
                       application</li>
-                    <li><strong>Implement: </strong>Business and presentation modules</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Business and presentation modules</li>
                   </ul>
                 </div>
                 <div class="project-technologies">
@@ -477,22 +478,21 @@
                 <div class="project-link">
                   <div class="project-title">Higher Ed (6 months)</div>
                   <div class="project-subtitle">ASP.NET MVC Web Application, Online Learning Management</div>
-                  <div class="job-title">Senior Software Developer -Team Members: 15</div>
+                  <div class="job-title">Senior Web Developer-Team Members: 15</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
-                    <li><strong>Implement: </strong>Media functions with Silverlight. Fix bugs of WPF app</li>
-                    <li><strong>Implement: </strong>Business and Data Access Modules</li>
+                    <li><strong>Implement: </strong>Web page with jQueryUI/css</li>
+                    <li><strong>Implement: </strong>Media functions with javaScript/jQuery</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Business and Data Access Modules</li>
                   </ul>
                 </div>
                 <div class="project-technologies">
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
-                    <li><a href="https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/xaml-overview-wpf"
-                        rel="nofollow" target="_blank">XAML</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" rel="nofollow"
-                        target="_blank">wpf</a></li>
+                    <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jQuery</a></li>
+                    <li><a href="https://jqueryui.com/" rel="nofollow" target="_blank">jqueryui</a></li>
                     <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
                         mvc</a>
                     </li>
@@ -506,22 +506,22 @@
                 <div class="project-link">
                   <div class="project-title">BC Hydro (3 weeks)</div>
                   <div class="project-subtitle">ASP.NET MVC Web Application, Electrical Power Services</div>
-                  <div class="job-title">Software Developer -Team Members: 10</div>
+                  <div class="job-title">Web Developer-Team Members: 10</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>
                   <ul class='role'>
                     <li><strong>Implement: </strong>UI with HTML, CSS, jQuery and Ajax</li>
-                    <li><strong>Implement: </strong>Stored Procedures</li>
-                    <li><strong>Implement: </strong>Business and Repository Modules</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Stored Procedures</li>
+                    <li *ngIf="!isFront"><strong>Implement: </strong>Business and Repository Modules</li>
                   </ul>
                 </div>
                 <div class="project-technologies">
                   <div class="technologies-title">Technologies</div>
                   <ul class="tech-tags">
                     <li><a href="https://jquery.com/" rel="nofollow" target="_blank">jquery</a></li>
-                    <li><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" rel="nofollow"
-                        target="_blank">stored
+                    <li *ngIf="!isFront"><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp"
+                        rel="nofollow" target="_blank">stored
                         procedure</a></li>
                     <li><a href="https://dotnet.microsoft.com/apps/aspnet" rel="nofollow" target="_blank">asp.net
                         mvc</a>
@@ -536,7 +536,7 @@
                   <div class="project-title">ADESA (4 months)</div>
                   <div class="project-subtitle">ASP.NET MVC Web Application, Online Vehicle Auction and Re-marketing
                     Services</div>
-                  <div class="job-title">Software Developer -Team Members: 20+</div>
+                  <div class="job-title">Web Developer-Team Members: 20+</div>
                 </div>
                 <div class="project-description">
                   <div class="technologies-title">Role/tasks:</div>

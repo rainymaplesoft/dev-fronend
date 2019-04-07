@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Config } from '../config';
 import { trigger, state, transition, style, animate } from '@angular/animations';
-import { Observable, fromEvent, Subscription } from 'rxjs';
-import { map, filter, tap } from 'rxjs/operators';
 import { fadeInAnimation } from '../_shared/animation';
+import { ActivatedRoute } from '@angular/router';
+import { AppService } from '../_shared/services/app.service';
 
 const menuSlideAnimate =
   // trigger name for attaching this animation to an element using the [@triggerName] syntax
@@ -41,10 +40,15 @@ export class HomeComponent implements OnInit {
   imgEasyRmts = `assets/img/easyRmts.jpg`;
   imgHomeroom = `assets/img/homeroom.jpg`;
   imgCoris = `assets/img/coris.jpg`;
-  constructor() { }
+
+  isFront = false;
+
+  constructor(private route: ActivatedRoute, private appService: AppService) { }
 
   ngOnInit() {
     window.scroll(0, 0);
+    this.isFront = this.appService.isFrontEnd();
   }
+
 
 }

@@ -12,7 +12,7 @@
       <img src="assets/img/avatar.jpg" alt="" class="avatar">
       <div class="person-content">
         <div class="person-title">Jianguo Li</div>
-        <div class="person-subtitle">Full-stack Web developer</div>
+        <div class="person-subtitle">Senior Web developer</div>
       </div>
     </div>
   </div>
@@ -43,34 +43,33 @@
 </nav>
 
 <mat-menu #animals="matMenu">
-  <button mat-menu-item (click)='nav("about")'>
+  <button mat-menu-item (click)='nav("/about")'>
     <mat-icon>person</mat-icon><span>About Me</span>
   </button>
-  <button mat-menu-item (click)='nav("home")'>
+  <button mat-menu-item (click)='nav("/home")'>
     <mat-icon>web</mat-icon><span>My Work Experience</span>
   </button>
   <button mat-menu-item [matMenuTriggerFor]="mySkills">
     <mat-icon>equalizer</mat-icon><span>My Skill Set</span>
   </button>
   <button mat-menu-item>
-    <a href="https://docs.google.com/document/d/1BMQjPnOm0rpTjM4dCCYmQ8WvQurAL3sD9b0ysh5Wj1E/edit?usp=sharing"
-      target="blank">
+    <a [href]='cvLink' target="blank">
       <mat-icon>description</mat-icon><span>My CV</span>
     </a>
   </button>
-  <button mat-menu-item (click)='nav("photo")'>
+  <button mat-menu-item (click)='nav("/photo")'>
     <mat-icon>camera</mat-icon><span>Some Photos</span>
   </button>
 </mat-menu>
 
 <mat-menu #mySkills="matMenu">
-  <button mat-menu-item (click)='nav("skills/front")'>
+  <button mat-menu-item (click)='nav("/skills/front")'>
     <mat-icon>devices</mat-icon><span>Front-End</span>
   </button>
-  <button mat-menu-item (click)='nav("skills/back")'>
+  <button mat-menu-item (click)='nav("/skills/back")'>
     <mat-icon>code</mat-icon><span>Back-End</span>
   </button>
-  <button mat-menu-item (click)='nav("skills/data")'>
+  <button mat-menu-item (click)='nav("/skills/data")'>
     <mat-icon>dns</mat-icon><span>Database</span>
   </button>
 </mat-menu>

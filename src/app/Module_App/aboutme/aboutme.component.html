@@ -3,27 +3,43 @@
   <div class="main-section" [@fadeInAnimation]>
     <div class="container flow-text">
       <blockquote>
-        <h2>Mission-driven full stack developer with a passion for thoughtful UI design, cutting-edge web
+        <h2 *ngIf="isFront">Mission-driven front-end developer with a passion for thoughtful UI design, cutting-edge web
+          technologies.
+        </h2>
+        <h2 *ngIf="!isFront">Mission-driven full stack developer with a passion for thoughtful UI design, cutting-edge
+          web
           technologies.
         </h2>
       </blockquote>
-      <p>I am a Senior Software Developer with over 7 years of experience of designing, developing, maintaining and
+      <p *ngIf="isFront">I am a Senior Web Developer with over 7 years of experience of designing, developing,
+        maintaining and
         testing for a wide
-        variety of commercial grade web applications. Strong in front-end solution architect/development, Asp.Net web
-        application
-        architect/development, SQL/NoSQL database development, business services design/implementation. Solid skills
-        of Design
-        Patents, TDD practice, Source/Version Control Management. Over 7 years of experience working in Agile/Scrum
+        variety of commercial grade web applications. Strong in front-end solution design/development with years of
+        experience of modern web framework (Angular, React... ). Solid skills of Design Patents, TDD practice,
+        Source/Version Control Management. Over 7 years of experience working in Agile/Scrum
         environments, along with PM, Dev, BA and QA teams.</p>
       <p>As a web developer, I am always passionate about learning, applying new technologies, and getting excited
         about finding a new or better way to solve a problem people’ve been working on.</p>
       <p>
-        <strong>Current Focus</strong>:&nbsp;
-        <ul class="tech-tags">
-          <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular</a></li>
-          <li><a href="https://firebase.google.com/" rel="nofollow" target="_blank">firebase</a></li>
-          <li><a href="https://developers.google.com/web/progressive-web-apps/" rel="nofollow" target="_blank">pwa</a>
-          </li>
-        </ul>
+        <p *ngIf="!isFront">I am a Senior Web Developer with over 7 years of experience of designing, developing,
+          maintaining and
+          testing for a wide
+          variety of commercial grade web applications. Strong in front-end solution architect/development, Asp.Net web
+          application
+          architect/development, SQL/NoSQL database development, business services design/implementation. Solid skills
+          of Design
+          Patents, TDD practice, Source/Version Control Management. Over 7 years of experience working in Agile/Scrum
+          environments, along with PM, Dev, BA and QA teams.</p>
+        <p>As a web developer, I am always passionate about learning, applying new technologies, and getting excited
+          about finding a new or better way to solve a problem people’ve been working on.</p>
+        <p>
+          <strong>Current Focus</strong>:&nbsp;
+          <ul class="tech-tags">
+            <li><a href="https://angular.io/" rel="nofollow" target="_blank">angular</a></li>
+            <li><a href="https://reactjs.org/" rel="nofollow" target="_blank">reactjs</a></li>
+            <li><a href="https://firebase.google.com/" rel="nofollow" target="_blank">firebase</a></li>
+            <li><a href="https://developers.google.com/web/progressive-web-apps/" rel="nofollow" target="_blank">pwa</a>
+            </li>
+          </ul>
     </div>
   </div>
