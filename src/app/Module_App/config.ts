@@ -59,8 +59,8 @@ export class Config {
 
 
   static MobileMenuFS: IMenuItem[] = [
-    { menu_text: 'About Me', route: RouteName.FE_About },
-    { menu_text: 'Work Experience', route: RouteName.FE_Home },
+    { menu_text: 'About Me', route: RouteName.FS_About },
+    { menu_text: 'Work Experience', route: RouteName.FS_Home },
     {
       menu_text: 'My Skill Set',
       route: 'skills',
@@ -69,15 +69,15 @@ export class Config {
         // { menu_text: 'Front-End', route: RouteName.Skills, param: 'front' },
         // { menu_text: 'Back-End', route: RouteName.Skills, param: 'back' },
         // { menu_text: 'Database', route: RouteName.Skills, param: 'data' }
-        { menu_text: 'Front-End', route: `${RouteName.FE_Skills}/front` },
-        { menu_text: 'Back-End', route: `${RouteName.FE_Skills}/back` },
-        { menu_text: 'Database', route: `${RouteName.FE_Skills}/data` }
+        { menu_text: 'Front-End', route: `${RouteName.FS_Skills}/front` },
+        { menu_text: 'Back-End', route: `${RouteName.FS_Skills}/back` },
+        { menu_text: 'Database', route: `${RouteName.FS_Skills}/data` }
       ]
     },
     // { menu_text: 'Gallery', action: RouteName.Home },
     {
       menu_text: 'My CV', isLink: true,
-      route: 'https://docs.google.com/document/d/1p4xpiX-3f1DbFQpeIbHSH934CcGFAAiZJlRtIokcPO0/edit?usp=sharing'
+      route: 'https://docs.google.com/document/d/1_BAFvVl2NMKuglJEfkdO46s3OKWx2miIQBxNRJcLkV0/edit?usp=sharing'
     },
     { menu_text: 'Some Photos', route: RouteName.FE_Photo },
   ];

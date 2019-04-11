@@ -57,20 +57,22 @@ $gt-sm: 960px;
   }
   @media (max-width: 460px) {
     // &.isShowHeader {
-    height: 80px;
+    height: 62px;
     #mobile-menu {
       .person {
         width: 100%;
         .person-avatar {
           justify-content: center;
+          padding: 5px;
           .avatar {
-            width: 50px !important;
-            height: 50px !important;
+            width: 45px !important;
+            height: 45px !important;
             margin-left: 0;
           }
           .person-content {
             position: static;
             padding: 5px 15px;
+            padding-top: 0;
             .person-title {
               font-size: 16px !important;
             }
@@ -85,7 +87,7 @@ $gt-sm: 960px;
       display: none;
     }
     .action-button {
-      top: 50px !important;
+      top: 32px !important;
     }
     // }
   }

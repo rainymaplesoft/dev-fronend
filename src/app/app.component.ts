@@ -47,6 +47,11 @@ export class AppComponent implements OnInit {
     if (mainContainer) {
       mainContainer.scrollTop = 0;
     }
+    if (location.href.indexOf('/fe/') > 0) {
+      this.mobileMenu = Config.MobileMenuFE;
+    } else {
+      this.mobileMenu = Config.MobileMenuFS;
+    }
   }
 
   ngOnInit() {

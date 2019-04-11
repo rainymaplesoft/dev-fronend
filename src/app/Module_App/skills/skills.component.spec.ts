@@ -4,7 +4,7 @@ import { SkillsComponent } from './skills.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from 'src/app/material.modual';
-import { ActivatedRouteStub } from '../_shared/activatedRoute.stub';
+import { ActivatedRouteStub } from '../_shared/test/route.stub';
 import { ActivatedRoute } from '@angular/router';
 
 describe('SkillsComponent', () => {
@@ -20,7 +20,7 @@ describe('SkillsComponent', () => {
       imports: [BrowserModule,
         BrowserAnimationsModule, AppMaterialModule],
       declarations: [SkillsComponent],
-      providers: [{ provide: ActivatedRoute, useValue: activatedRouteStub }]
+      providers: [{ provide: ActivatedRoute, useValue: ActivatedRouteStub }]
     })
       .compileComponents();
   }));
